@@ -50,6 +50,7 @@
 
 
 \usepackage{tikz}
+\usepackage{enumitem}
 
 \begin{document}
 	% section macro
@@ -57,26 +58,72 @@
 			\node[shape=circle, fill=#2, draw=#3, line width=2pt, text=#4, inner sep=3pt] (char) {#1};}}
 		
 	\newcommand{\ressec}[2]{
-		\section*{{\small \circled{{\color{White} \faIcon{#2}}}{Cerulean}{RoyalBlue}{red}} #1}}{}
+		\section*{{\small \circled{{\color{White} \faIcon{#2}}}{Cerulean}{Goldenrod}{red}} #1}}{}
 	
-
+	\newcommand{\daterange}[2]{{\color{Cerulean} #1 -- #2}}
+	
 	\ressec{Education}{university}
-	\lipsum[0-1]
+	\begin{itemize}[leftmargin=*]
+		\item[]
+		\textbf{University of Southern California}\\
+		\textit{Applied Data Science} \hfill \daterange{Aug. 2020}{Present}
+		
+		\item[]
+		\textbf{University of California, Los Angeles}\\
+		\textit{Applied Mathematics} \hfill \daterange{Aug. 2018}{Aug. 2020}
+		
+		\item[]
+		\textbf{University of Southern California}\\
+		\textit{Associate Degree in Mathematics} \hfill \daterange{Aug. 2016}{July. 2017}
+	\end{itemize}
+
+	\noindent
+	\begin{minipage}[t]{0.5\textwidth}
+		\ressec{Work Experience}{briefcase}
+		
+		\begin{itemize}[leftmargin=*]
+			\item[]
+			\textbf{Supplemental Instruction Coach}, \textit{East Los Angeles College}, Monterey Park, CA \\
+			\daterange{Aug. 2017}{Jun. 2018} \\
+			SI Coach is an outstanding student who is selected and trained to conduct weekly sessions and has office hours designed to empower students' study skills. Coaching students how to become independent learners, and how to use different approach to solve problems.
+			
+			\item[] 
+			\textbf{BUILD PODER program tutor}, \textit{East Los Angeles College}, Monterey Park, CA \\
+			\daterange{Sept. 2017}{Nov. 2017} \\
+			BUILD PODER is an undergraduate training program at CSU. I was one-to-one tutoring Calculus and improving the learning skills for the student in this program.
+		\end{itemize}
 	
-	\ressec{Skills}{list}
-	\lipsum[0-1]
+		\ressec{Internship Experience}{handshake}
+		\begin{itemize}[leftmargin=*]
+			\item[]
+			\textbf{Emergency Data Relief Internship}, \textit{BroadStreet} \\
+			\daterange{Sept. 2020}{Present} \\
+			The Primary Data Goal is to create and maintain a research-ready dataset around COVID-19 cases and deaths for every county in the nation.
+			
+			\item[] 
+			\textbf{Internship}, \textit{Beijing Mankai Tech LLC.}, Beijing, China\\
+			\daterange{July. 2019}{Aug. 2019} \\
+			Analyze data of financial statements, design and optimize statement template, and other miscellaneous assignments from my employer.
+		\end{itemize}
 	
-	\ressec{Work Experience}{briefcase}
-	\lipsum[0-1]
+		\ressec{Academic Projects}{project-diagram}
+		\begin{itemize}[leftmargin=*]
+			\item[] 
+			\textbf{Latex Writing Style of ArXiV Authors} \\
+			{\color{Cerulean} \href{https://github.com/Anthonyive/machine-learning-project.git}{https://github.com/Anthonyive/machine-learning-project.git}} \\
+			The idea of this project is to cluster writing styles of different authors across different categories in arXiv.org's Math topic. Team member and I downloaded source files across categories, web scrapped data for each paper, and generated CSVs. The end result was clustered by k-means algorithm.
+		\end{itemize}
+	\end{minipage}\hspace{.5cm}  % <--- space
+	\begin{minipage}[t]{0.45\textwidth}
+		\ressec{Skills}{list}
+		\lipsum[0-1]
+		
+		\ressec{Involvement}{cube}
+		\lipsum[0-1]
+	\end{minipage}
 	
-	\ressec{Internship Experience}{handshake}
-	\lipsum[0-1]
 	
-	\ressec{Involvement}{cube}
-	\lipsum[0-1]
 	
-	\ressec{Academic Projects}{project-diagram}
-	\lipsum[0-1]
 
 	
 	
