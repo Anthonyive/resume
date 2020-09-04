@@ -57,22 +57,25 @@
 	\rlap{\color{white}\rule{.4pt}{.7\baselineskip}}% Mark location
 	\vspace{\baselineskip}}% Insert \vspace
 
-
+% More packages
 \usepackage{tikz}
 \usepackage{enumitem}
 
 \begin{document}
+	% define some colors
+	\definecolor{VibrantBlue}{RGB}{60,140,200}
+	\definecolor{progressbarbg}{rgb}{0.9, 0.9, 0.9}
+	
 	% section macro
 	\newcommand*\circled[4]{\tikz[baseline=(char.base)]{
 			\node[shape=circle, fill=#2, draw=#3, line width=2pt, text=#4, inner sep=3pt] (char) {#1};}}
-		
 	\newcommand{\ressec}[2]{
-		\section*{{\small \circled{{\color{White} \faIcon{#2}}}{Cerulean}{Goldenrod}{red}} #1}}{}
+		\section*{{\small \circled{{\color{White} \faIcon{#2}}}{Cerulean}{VibrantBlue}{red}} #1}}{}
 	
+	% date range redefine
 	\newcommand{\daterange}[2]{{\color{Cerulean} #1 -- #2}}
 	
-	\definecolor{Jordy Blue}{RGB}{117,170,219}
-	\definecolor{progressbarbg}{rgb}{0.9, 0.9, 0.9}
+	%%%%% Education %%%%%
 	
 	\ressec{Education}{university}
 	\begin{itemize}[leftmargin=*]
@@ -88,6 +91,8 @@
 		\textbf{University of Southern California}  \hfill \daterange{Aug. 2016}{July. 2017} \\
 		\textit{Associate Degree in Mathematics}
 	\end{itemize}
+
+	%%%%% Work Experience and Skills %%%%%
 	
 	\insertvspace
 	\noindent
@@ -142,6 +147,8 @@
 		\end{itemize}
 	\end{minipage}
 
+	%%%%% Internship Experience and Involvement %%%%%
+
 	\insertvspace
 	\noindent
 	\begin{minipage}[t]{0.5\textwidth}		
@@ -167,15 +174,17 @@
 		\end{itemize}
 	\end{minipage}
 
+	%%%%% Academic Projects and Miscellaneous %%%%%
+
 	\insertvspace
 	\noindent
 	\begin{minipage}[t]{0.5\textwidth}
 		\ressec{Academic Projects}{project-diagram}
 		\begin{itemize}[leftmargin=*]
 			\item[] 
-			\textbf{Latex Writing Style of ArXiV Authors} \\
+			\textbf{\LaTeX\ Writing Style of ArXiV Authors} \\
 			{\color{Cerulean} \href{https://github.com/Anthonyive/machine-learning-project.git}{https://github.com/Anthonyive/machine-learning-project.git}} \\
-			The idea of this project is to cluster writing styles of different authors across different categories in arXiv.org's Math topic. Team member and I downloaded source files across categories, web scrapped data for each paper, and generated CSVs. The end result was clustered by k-means algorithm.
+			The idea of this project is to cluster writing styles of different authors across different categories in \href{https://arxiv.org}{arXiv.org}'s Math topic. Team member and I downloaded source files across categories, web scrapped data for each paper, and generated CSVs. The end result was clustered by k-means algorithm.
 		\end{itemize}
 	\end{minipage}\hspace{0.3in}  % <--- space
 	\begin{minipage}[t]{0.45\textwidth}
@@ -186,12 +195,8 @@
 			\item
 			Bilingual in Chinese and English (oral and written translation).
 			\item
-			Certified American Red Cross Adult and Pediatric First Aid/CPR/AED
+			Certified American Red Cross Adult and Pediatric First Aid/CPR/AED.
 		\end{itemize}
-	\end{minipage}	
-	
-	
-
-	
+	\end{minipage}
 	
 \end{document}
