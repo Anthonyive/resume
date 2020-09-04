@@ -1,0 +1,152 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{enumitem}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingAH}[2]{
+	\vspace{-1pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+	\end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\CC}{C\nolinebreak\hspace{-.05em}\raisebox{.4ex}{\tiny\bf +}\nolinebreak\hspace{-.10em}\raisebox{.4ex}{\tiny\bf +}}
+\def\CC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}}
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Yuchen Zhang} & Email : \href{mailto:anthonyucla@ucla.edu}{anthonyucla@ucla.edu}\\
+  Mobile : +1-323-868-8380 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+\textbf{University of Southern California}\\
+\textit{Applied Data Science} \hfill Aug. 2020 -- Present \\ 
+
+\textbf{University of California, Los Angeles}\\
+\textit{Applied Mathematics and minor in Statistics} \hfill Aug. 2018 -- Aug. 2020 \\
+
+\textbf{East Los Angeles College} \\
+\textit{Associate Degree in Mathematics} \hfill Aug. 2016 -- July. 2018 \\
+
+%-----------AWARD AND HONOR-----------------
+\section{Awards and Honors}
+
+\textbf{Dean's Honor List} \hfill 2016 - 2020 except Fall 2018 \\
+$\bullet$ Dean's Honor List is granted to students who have successfully completed all courses with an outstanding GPA in a certain period.  \break
+
+%-----------WORK EXPERIENCE-----------------
+\section{Work Experience}
+
+\textbf{Emergency Data Relief Internship}\\
+BroadStreet \hfill Sept. 2020 – Present \\
+$\bullet$ The Primary Data Goal is to create and maintain a research-ready dataset around COVID-19 cases and deaths for every county in the nation. \break
+
+\textbf{Internship}\\
+Beijing Mankai Tech LLC, Beijing, China \hfill July. 2019 – Aug. 2019 \\
+$\bullet$ Analyze data of financial statements, design and optimize statement template, and other miscellaneous assignments from my employer. \break
+
+
+\textbf{Supplemental Instruction Coach}\\
+East Los Angeles College, Monterey Park, CA \hfill Aug. 2017 – Jun. 2018 \\
+$\bullet$ SI Coach is an outstanding student who is selected and trained to conduct weekly sessions and has office hours designed to empower students' study skills. Coaching students how to become independent learners, and how to use different approach to solve problems. \break
+
+\textbf{BUILD PODER program tutor}\\
+East Los Angeles College, Monterey Park, CA \hfill Sep. 2017 – Nov. 2017 \\
+$\bullet$ BUILD PODER is an undergraduate training program at CSU. I was one-to-one tutoring Calculus and improving the learning skills for the student in this program.\break
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{Latex Writing Style of ArXiV Authors}
+{The idea of this project is to cluster writing styles of different authors across different categories in ArXiV.org's Math topic. Team member and I downloaded source files across categories, web scrapped data for each paper, and generated CSVs. The end result was clustered by k-means algorithm.}\\
+
+\resumeSubHeadingListEnd
+
+
+%--------SKILLS------------
+\section{Skills}
+Programming Languages: \\
+$\bullet$ Primarily using Python, R, \CC, \LaTeX, and C. \\
+$\bullet$ Basic understanding on Assembly Language (AT\&T style), Emacs Lisp, and HTML. \break
+
+Languages: Bilingual in Chinese and English (oral and written translation). \break
+
+Others:
+Certified American Red Cross Adult and Pediatric First Aid/CPR/AED
+
+%-------------------------------------------
+\end{document}
