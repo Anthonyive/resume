@@ -14,7 +14,7 @@
 	headheight=100pt, % height for the header block
 	headsep=15pt,    % distance from the header block to the text block
 	heightrounded,   % ensure an integer number of lines
-	showframe,
+%	showframe,
 	nofoot
 	]{geometry}
 
@@ -48,6 +48,15 @@
 }
 \renewcommand{\headrulewidth}{0pt}
 
+% Cpp logo
+\newcommand{\CC}{C\nolinebreak\hspace{-.05em}\raisebox{.4ex}{\tiny\bf}\nolinebreak\hspace{-.10em}\raisebox{.4ex}{\big \bf +}}
+\def\CC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}}
+
+% vertical spaces
+\newcommand{\insertvspace}{%
+	\rlap{\color{white}\rule{.4pt}{.7\baselineskip}}% Mark location
+	\vspace{\baselineskip}}% Insert \vspace
+
 
 \usepackage{tikz}
 \usepackage{enumitem}
@@ -62,21 +71,25 @@
 	
 	\newcommand{\daterange}[2]{{\color{Cerulean} #1 -- #2}}
 	
+	\definecolor{Jordy Blue}{RGB}{117,170,219}
+	\definecolor{progressbarbg}{rgb}{0.9, 0.9, 0.9}
+	
 	\ressec{Education}{university}
 	\begin{itemize}[leftmargin=*]
 		\item[]
-		\textbf{University of Southern California}\\
-		\textit{Applied Data Science} \hfill \daterange{Aug. 2020}{Present}
+		\textbf{University of Southern California} \hfill \daterange{Aug. 2020}{Present} \\
+		\textit{Applied Data Science} 
 		
 		\item[]
-		\textbf{University of California, Los Angeles}\\
-		\textit{Applied Mathematics} \hfill \daterange{Aug. 2018}{Aug. 2020}
+		\textbf{University of California, Los Angeles} \hfill \daterange{Aug. 2018}{Aug. 2020} \\
+		\textit{Bachelor's Degree in Applied Mathematics, Minor in Statistics} 
 		
 		\item[]
-		\textbf{University of Southern California}\\
-		\textit{Associate Degree in Mathematics} \hfill \daterange{Aug. 2016}{July. 2017}
+		\textbf{University of Southern California}  \hfill \daterange{Aug. 2016}{July. 2017} \\
+		\textit{Associate Degree in Mathematics}
 	\end{itemize}
-
+	
+	\insertvspace
 	\noindent
 	\begin{minipage}[t]{0.5\textwidth}
 		\ressec{Work Experience}{briefcase}
@@ -92,7 +105,46 @@
 			\daterange{Sept. 2017}{Nov. 2017} \\
 			BUILD PODER is an undergraduate training program at CSU. I was one-to-one tutoring Calculus and improving the learning skills for the student in this program.
 		\end{itemize}
-	
+	\end{minipage}\hspace{0.3in}  % <--- space
+	\begin{minipage}[t]{0.45\textwidth}
+		\ressec{Skills}{list}
+		\begin{itemize}[leftmargin=*]
+			\item[] 
+			R \\
+			\begin{tikzpicture}
+				\draw[fill=progressbarbg] (0,0) -- (8,0) -- (8,0.2) -- (0,0.2) -- cycle;
+				\shade[left color=Cerulean,right color=RoyalBlue] (0,0) rectangle (7.2,0.2);
+			\end{tikzpicture}
+		
+			\item[] 
+			Python \\
+			\begin{tikzpicture}
+				\draw[fill=progressbarbg] (0,0) -- (8,0) -- (8,0.2) -- (0,0.2) -- cycle;
+				\shade[left color=Cerulean,right color=RoyalBlue] (0,0) rectangle (7.2,0.2);
+			\end{tikzpicture}
+		
+			\item[] 
+			\LaTeX \\
+			\begin{tikzpicture}
+				\draw[fill=progressbarbg] (0,0) -- (8,0) -- (8,0.2) -- (0,0.2) -- cycle;
+				\shade[left color=Cerulean,right color=RoyalBlue] (0,0) rectangle (5,0.2);
+			\end{tikzpicture}
+		
+			\item[] 
+			\CC \\
+			\begin{tikzpicture}
+				\draw[fill=progressbarbg] (0,0) -- (8,0) -- (8,0.2) -- (0,0.2) -- cycle;
+				\shade[left color=Cerulean,right color=RoyalBlue] (0,0) rectangle (4.5,0.2);
+			\end{tikzpicture}
+		
+			\item[]
+			Basic understanding on Bash, Zsh, Assembly Language (AT\&T style), C, and Emacs Lisp.
+		\end{itemize}
+	\end{minipage}
+
+	\insertvspace
+	\noindent
+	\begin{minipage}[t]{0.5\textwidth}		
 		\ressec{Internship Experience}{handshake}
 		\begin{itemize}[leftmargin=*]
 			\item[]
@@ -105,7 +157,19 @@
 			\daterange{July. 2019}{Aug. 2019} \\
 			Analyze data of financial statements, design and optimize statement template, and other miscellaneous assignments from my employer.
 		\end{itemize}
-	
+	\end{minipage}\hspace{0.3in}  % <--- space
+	\begin{minipage}[t]{0.45\textwidth}
+		\ressec{Involvement}{cube}
+		\begin{itemize}[leftmargin=*]
+			\item[] 
+			\textbf{ISAP Publicity Director}, \textit{East Los Angeles College}, Monterey Park, CA \\
+			Pub​lic​ity Di​rec​tor of In​ter​na​tional Stu​dent Ad​vance​ment Pro​‐ gram(ISAP), di​rected 2017 Lunar New Year Fair, Food sales, UCSD-UCI, and varies pub​lic​ity ac​tiv​i​ties.
+		\end{itemize}
+	\end{minipage}
+
+	\insertvspace
+	\noindent
+	\begin{minipage}[t]{0.5\textwidth}
 		\ressec{Academic Projects}{project-diagram}
 		\begin{itemize}[leftmargin=*]
 			\item[] 
@@ -113,15 +177,18 @@
 			{\color{Cerulean} \href{https://github.com/Anthonyive/machine-learning-project.git}{https://github.com/Anthonyive/machine-learning-project.git}} \\
 			The idea of this project is to cluster writing styles of different authors across different categories in arXiv.org's Math topic. Team member and I downloaded source files across categories, web scrapped data for each paper, and generated CSVs. The end result was clustered by k-means algorithm.
 		\end{itemize}
-	\end{minipage}\hspace{.5cm}  % <--- space
+	\end{minipage}\hspace{0.3in}  % <--- space
 	\begin{minipage}[t]{0.45\textwidth}
-		\ressec{Skills}{list}
-		\lipsum[0-1]
-		
-		\ressec{Involvement}{cube}
-		\lipsum[0-1]
-	\end{minipage}
-	
+		\ressec{Miscellaneous}{bullseye}
+		\begin{itemize}[leftmargin=*]
+			\item 
+			Interested in leather crafting, wood working, video games, ping pong, and more!
+			\item
+			Bilingual in Chinese and English (oral and written translation).
+			\item
+			Certified American Red Cross Adult and Pediatric First Aid/CPR/AED
+		\end{itemize}
+	\end{minipage}	
 	
 	
 
