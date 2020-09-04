@@ -7,7 +7,16 @@
 \pagenumbering{gobble}
 
 % set margin to 0.5in
-\usepackage[margin=0.5in]{geometry}
+\usepackage[
+	height=9in,      % height of the text block
+	width=7.5in,       % width of the text block
+	top=110pt,        % distance of the text block from the top of the page
+	headheight=100pt, % height for the header block
+	headsep=15pt,    % distance from the header block to the text block
+	heightrounded,   % ensure an integer number of lines
+	showframe,
+	nofoot
+	]{geometry}
 
 % change font
 \usepackage{fontspec}
@@ -18,7 +27,44 @@
 \author{Yuchen Zhang}
 \date{\today}
 
+% header
+\usepackage{fancyhdr} % fancy header
+\usepackage{hyperref} % clickable email and phone numbers
+\usepackage{fontawesome5} % icons
+\usepackage[dvipsnames]{xcolor} % icon colors
+\pagestyle{fancy}
+\fancyhf{} % clear all fields
+
+\fancyhead[L]{
+	% name
+	\textbf{\Huge Yuchen Zhang} \\ \medskip
+	% email
+	{\color{Cyan} \faIcon{envelope-open-text}} \enskip
+	\href{mailto:anthonyucla@ucla.edu}{\nolinkurl{anthonyucla@ucla.edu}} \\ \smallskip
+	% phone
+	{\color{Cyan} \faIcon{phone}} \enskip \href{tel:13238688380}{(323) 868-8380} \\ \smallskip
+	% linedin profile
+	{\color{Cyan} \faIcon{linkedin}} \enskip \href{www.linkedin.com/in/anthonyive}{www.linkedin.com/in/anthonyive}
+}
+\renewcommand{\headrulewidth}{0pt}
+
+
 \begin{document}
-	\maketitle
-	\lipsum[0-13]
+	\section*{Education}
+	\lipsum[0-1]
+	
+	\section*{Skills}
+	\lipsum[0-1]
+	
+	\section*{Work Experience}
+	\lipsum[0-1]
+	
+	\section*{Internship Experience}
+	\lipsum[0-1]
+	
+	\section*{Involvement}
+	\lipsum[0-1]
+	
+	\section*{Academic Projects}
+	\lipsum[0-1]
 \end{document}
