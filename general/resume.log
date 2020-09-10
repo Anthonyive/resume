@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.6.6)  4 SEP 2020 16:38
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.6.6)  9 SEP 2020 22:09
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -777,11 +777,11 @@ LaTeX Info: Redefining \nameref on input line 64.
 
  ABD: EveryShipout initializing macros
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 132.
+(Font)              <7> on input line 131.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 132.
+(Font)              <5> on input line 131.
 
-Underfull \hbox (badness 4181) in paragraph at lines 198--199
+Underfull \hbox (badness 4181) in paragraph at lines 197--198
 []\TU/EBGaramond(0)/m/n/10 Certified American Red Cross Adult and Pediatric Fir
 st
  []
@@ -799,19 +799,19 @@ File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 [1
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 202.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 202.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 201.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 201.
  (./resume.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 202.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 202.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 201.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 201.
 Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 202.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 201.
  ) 
 Here is how much of TeX's memory you used:
  23844 strings out of 479284
  475950 string characters out of 5880517
- 865583 words of memory out of 5000000
+ 865555 words of memory out of 5000000
  41109 multiletter control sequences out of 15000+600000
  532914 words of font info for 52 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
