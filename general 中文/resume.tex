@@ -1,0 +1,210 @@
+\documentclass[10pt]{ctexart}
+
+
+% generate random texts
+\usepackage{lipsum}
+
+% suppress page numbering
+\pagenumbering{gobble}
+
+% set margin to 0.5in
+\usepackage[
+	height=9in,      % height of the text block
+	width=7.5in,       % width of the text block
+	top=110pt,        % distance of the text block from the top of the page
+	headheight=100pt, % height for the header block
+	headsep=15pt,    % distance from the header block to the text block
+	heightrounded,   % ensure an integer number of lines
+%	showframe,
+	nofoot
+	]{geometry}
+
+% change font
+\usepackage{fontspec}
+\setmainfont{EB Garamond}
+
+% affiliations
+\title{resume}
+\author{Yuchen Zhang}
+\date{\today}
+
+% header
+\usepackage{fancyhdr} % fancy header
+\usepackage{hyperref} % clickable email and phone numbers
+\usepackage{fontawesome5} % icons
+\usepackage[dvipsnames]{xcolor} % icon colors
+\pagestyle{fancy}
+\fancyhf{} % clear all fields
+
+\fancyhead[L]{
+	% name
+	\textbf{\Huge 张雨辰} \\ \medskip
+	% email
+	{\color{Cerulean} \faIcon{envelope-open-text}} \enskip
+	\href{mailto:anthonyucla@ucla.edu}{\nolinkurl{anthonyucla@ucla.edu}} \\ \smallskip
+	% phone
+	{\color{Cerulean} \faIcon{phone}} \enskip \href{tel:13238688380}{(323) 868-8380} \\ \smallskip
+	% linedin profile
+	{\color{Cerulean} \faIcon{linkedin}} \enskip \href{https://www.linkedin.com/in/anthonyive}{www.linkedin.com/in/anthonyive}
+}
+\renewcommand{\headrulewidth}{0pt}
+
+% Cpp logo
+\newcommand{\CC}{C\nolinebreak\hspace{-.05em}\raisebox{.4ex}{\tiny\bf}\nolinebreak\hspace{-.10em}\raisebox{.4ex}{\big \bf +}}
+\def\CC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}}
+
+% vertical spaces
+\newcommand{\insertvspace}{%
+	\rlap{\color{white}\rule{.4pt}{0.4\baselineskip}}% Mark location
+	\vspace{\parskip}}% Insert \vspace
+
+% More packages
+\usepackage{tikz}
+\usepackage{enumitem}
+
+\begin{document}
+	% define some colors
+	\definecolor{VibrantBlue}{RGB}{60,140,200}
+	\definecolor{progressbarbg}{rgb}{0.9, 0.9, 0.9}
+	
+	% section macro
+	\newcommand*\circled[4]{\tikz[baseline=(char.base)]{
+			\node[shape=circle, fill=#2, draw=#3, line width=2pt, text=#4, inner sep=3pt] (char) {#1};}}
+	\newcommand{\ressec}[2]{
+		\section*{{\small \circled{{\color{White} \faIcon{#2}}}{Cerulean}{VibrantBlue}{red}} #1}}{}
+	
+	% date range redefine
+	\newcommand{\daterange}[2]{{\color{Cerulean} #1 -- #2}}
+	
+	%%%%% Education %%%%%
+	
+	\ressec{教育背景}{university}
+	\begin{itemize}[leftmargin=*]
+		\item[]
+		\textbf{南加州大学} \hfill \daterange{2020年八月}{至今} \\
+		\textit{应用数据科学} 
+		
+		\item[]
+		\textbf{加州大学洛杉矶分校} \hfill \daterange{2018年八月}{2020年八月} \\
+		\textit{主修应用数学，辅修统计} 
+		
+		\item[]
+		\textbf{东洛杉矶大学}  \hfill \daterange{2016年八月}{2018年七月} \\
+		\textit{主修纯数学}
+	\end{itemize}
+
+	%%%%% Work Experience and Skills %%%%%
+	
+	\noindent
+	\begin{minipage}[t]{0.5\textwidth}
+		\ressec{工作经历}{briefcase}
+		
+		\begin{itemize}[leftmargin=*]
+			\item[]
+			\small
+			\textbf{Supplemental Instruction Coach}, \textit{东洛杉矶大学}, 蒙特利帕克, 加利福尼亚 \\
+			\daterange{2017年八月}{2018年六月} \\
+			SI Coach 每周多次授课，帮助学生解答学习上不懂的问题。我曾辅导过大学微积分前置，和微积分后阶的内容。
+			
+			\item[] 
+			\textbf{BUILD PODER program tutor}, \textit{东洛杉矶大学}, 蒙特利帕克, 加利福尼亚 \\
+			\daterange{2017年九月}{2017年十一月} \\
+			BUILD PODER 是始于加利福尼亚州立大学本科的训练项目。我每周多次授课，一对一帮助学生学习微积分。
+		\end{itemize}
+	\end{minipage}\hspace{0.3in}  % <--- space
+	\begin{minipage}[t]{0.45\textwidth}
+		\ressec{专业技能}{list}
+		\begin{itemize}[leftmargin=*]
+			\small
+			\item[] 
+			R \\
+			\begin{tikzpicture}
+				\draw[fill=progressbarbg] (0,0) -- (8,0) -- (8,0.2) -- (0,0.2) -- cycle;
+				\shade[left color=Cerulean,right color=RoyalBlue] (0,0) rectangle (7.2,0.2);
+			\end{tikzpicture}
+		
+			\item[] 
+			Python \\
+			\begin{tikzpicture}
+				\draw[fill=progressbarbg] (0,0) -- (8,0) -- (8,0.2) -- (0,0.2) -- cycle;
+				\shade[left color=Cerulean,right color=RoyalBlue] (0,0) rectangle (7.2,0.2);
+			\end{tikzpicture}
+		
+			\item[] 
+			\LaTeX \\
+			\begin{tikzpicture}
+				\draw[fill=progressbarbg] (0,0) -- (8,0) -- (8,0.2) -- (0,0.2) -- cycle;
+				\shade[left color=Cerulean,right color=RoyalBlue] (0,0) rectangle (5,0.2);
+			\end{tikzpicture}
+		
+			\item[] 
+			\CC \\
+			\begin{tikzpicture}
+				\draw[fill=progressbarbg] (0,0) -- (8,0) -- (8,0.2) -- (0,0.2) -- cycle;
+				\shade[left color=Cerulean,right color=RoyalBlue] (0,0) rectangle (4.5,0.2);
+			\end{tikzpicture}
+		
+			\item[]
+			熟悉 Bash, Zsh, 终端, 汇编语言 (AT\&T), C 和 Emacs Lisp. 懂得机器学习和自然语言学习。
+		\end{itemize}
+	\end{minipage}
+
+	%%%%% Internship Experience and Involvement %%%%%
+
+	\insertvspace
+	\noindent
+	\begin{minipage}[t]{0.5\textwidth}		
+		\ressec{实习经历}{handshake}
+		\begin{itemize}[leftmargin=*]
+			\small
+			\item[]
+			\textbf{Emergency Data Relief Internship, 质保团队}, \textit{BroadStreet} \\
+			\daterange{2020年九月}{至今} \\
+			主要的目标是创建和维持可供研究使用的每一次城市的新冠病毒感染和死亡人数的数据。我负责质量保证以确保每日信息正确。
+			
+			\item[] 
+			\textbf{实习}, \textit{北京满凯科技有限公司}, 中国北京\\
+			\daterange{2019年七月}{2019年八月} \\
+			主要负责基本数据整理，处理每日文件。
+		\end{itemize}
+	\end{minipage}\hspace{0.3in}  % <--- space
+	\begin{minipage}[t]{0.45\textwidth}
+		\ressec{社团活动}{cube}
+		\begin{itemize}[leftmargin=*]
+			\item[] 
+			\small
+			\textbf{ISAP 宣传部长}, \textit{东洛杉矶大学}, 蒙特利帕克, 加利福尼亚 \\
+			中国学生社团的宣传部长。指导过多次中国新年晚会，食物发放等活动的宣传。
+		\end{itemize}
+	\end{minipage}
+
+	%%%%% Academic Projects and Miscellaneous %%%%%
+
+	\insertvspace
+	\noindent
+	\begin{minipage}[t]{0.5\textwidth}
+		\ressec{学术项目}{project-diagram}
+		\begin{itemize}[leftmargin=*]
+			\small
+			\item[] 
+			\textbf{arXiv 网站上不同作者的\LaTeX\ 写作风格研究} \\
+			{\color{Cerulean} \href{https://github.com/Anthonyive/machine-learning-project.git}{https://github.com/Anthonyive/machine-learning-project.git}} \\
+			这个项目的目的是研究 arXiv.org 网站上数学话题下，作者的写作风格并尝试将其分类。我与队友利用网络爬虫，抓取了部分作者的tex文稿作为样本，整理了一系列的表格文件用于研究。最后用kmeans算法将作者分类。
+		\end{itemize}
+	\end{minipage}\hspace{0.3in}  % <--- space
+	\begin{minipage}[t]{0.45\textwidth}
+		\ressec{其他}{bullseye}
+		\begin{itemize}[leftmargin=*]
+			\small
+			\item 
+			爱好广泛，有不错的学习能力
+			\item
+			在美生活五年，拥有较强的英文听说读写能力
+			\item
+			熟练办公软件。例如微软Office系列和苹果办公系列
+			\item
+			美国红十字颁发的急救与心肺复苏证书
+		\end{itemize}
+	\end{minipage}
+	
+\end{document}
