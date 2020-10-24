@@ -1,0 +1,185 @@
+\documentclass{article}
+
+% generate random texts
+\usepackage{lipsum}
+
+% suppress page numbering
+\pagenumbering{gobble}
+
+% spacing between sections
+\usepackage{titlesec}
+\titlespacing{\section}{0pt}{\parskip}{-\parskip}
+\titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
+\titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
+
+% set margin to 0.5in
+\usepackage[
+	height=9in,      % height of the text block
+	width=7.5in,       % width of the text block
+	top=90pt,        % distance of the text block from the top of the page
+	headheight=100pt, % height for the header block
+	headsep=15pt,    % distance from the header block to the text block
+	heightrounded,   % ensure an integer number of lines
+%	showframe,
+	nofoot
+	]{geometry}
+
+% change font
+\usepackage{fontspec}
+\setmainfont{EB Garamond}
+
+% affiliations
+\title{resume}
+\author{Yuchen Zhang}
+\date{\today}
+
+% header
+\usepackage{fancyhdr} % fancy header
+\usepackage{hyperref} % clickable email and phone numbers
+\usepackage{fontawesome5} % icons
+\usepackage[dvipsnames]{xcolor} % icon colors
+\pagestyle{fancy}
+\fancyhf{} % clear all fields
+
+% color
+\usepackage{xcolor}
+\definecolor{apple-blue}{RGB}{0,122,255}
+\definecolor{apple-teal}{RGB}{90,200,250}
+\definecolor{apple-green}{RGB}{52,199,89}
+\definecolor{linkedin-blue}{RGB}{0,119,181}
+\definecolor{github-black}{RGB}{31,31,31}
+
+\newcommand\myshade{85}
+\colorlet{myurlcolor}{apple-blue}
+
+\hypersetup{
+	urlcolor   = myurlcolor!\myshade!black,
+	colorlinks = true,
+}
+
+
+\fancyhead[L]{
+	% name
+	\textbf{\Huge Yuchen Zhang} \\ \medskip
+	% address
+	\colorlet{myurlcolor}{apple-teal}
+	\hypersetup{urlcolor=myurlcolor!\myshade!black,colorlinks = true}
+	{\color{apple-teal} \faIcon{house-user}} \enskip
+	\href{https://www.google.com/maps?q=1977+Lupine+Ave,+CA,+91755}{1977 Lupine Ave, Monterey Park, CA} \hfill
+	% email
+	\colorlet{myurlcolor}{apple-blue}
+	\hypersetup{urlcolor=myurlcolor!\myshade!black,colorlinks = true}
+	\urlstyle{same}
+	{\color{apple-blue} \faIcon{inbox}} \enskip
+	\href{mailto:anthonyucla@ucla.edu}{\nolinkurl{anthonyucla@ucla.edu}} \hfill
+	% phone
+	\colorlet{myurlcolor}{apple-green}
+	\hypersetup{urlcolor=myurlcolor!\myshade!black,colorlinks = true}
+	{\color{apple-green} \faIcon{phone}} \enskip \href{tel:13238688380}{(323) 868-8380} \hfill
+	% linedin profile
+	\colorlet{myurlcolor}{linkedin-blue}
+	\hypersetup{urlcolor=myurlcolor!\myshade!black,colorlinks = true}
+	{\color{linkedin-blue} \faIcon{linkedin}} \enskip \href{https://www.linkedin.com/in/anthonyive}{www.linkedin.com/in/anthonyive}
+}
+\renewcommand{\headrulewidth}{0pt}
+
+% Cpp logo
+\usepackage{relsize}
+\newcommand\CC{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\relsize{-3}{\textbf{++}}}}
+
+% horizontal separator
+\newcommand{\divider}{\vskip2pt\hrule\vskip2pt}
+\setlength{\parindent}{0pt}
+
+% vertical spaces
+\newcommand{\insertvspace}{%
+	\rlap{\color{white}\rule{.4pt}{.7\baselineskip}}% Mark location
+	\vspace{\baselineskip}}% Insert \vspace
+
+% More packages
+\usepackage{tikz}
+\usepackage{enumitem}
+
+\begin{document}
+	\section*{EDUCATION}
+	\divider
+		\subsection*{University of Southern California \hfill {\normalfont Los Angeles, CA}}
+		\noindent
+		Viterbi School of Engineering \hfill August 2020 \\
+		Master of Science, Applied Data Science \hfill GPA N/A \\
+		
+		\subsection*{University of California, Los Angeles \hfill {\normalfont Los Angeles, CA}}
+		\noindent
+		College of Letters and Science \hfill August 2018 \\
+		Bachelor of Science, Applied Mathematics \hfill GPA 3.863 \\
+		
+	\section*{WORK EXPERIENCE}
+	\divider
+		\subsection*{BroadStreet{\normalfont, Remote \hfill Sept. 2020 - Present}}
+			\subsubsection*{Emergency Data Relief Internship, QA track}
+			\begin{itemize}
+				\setlength\itemsep{-1pt}
+				\item In charge of quality assurance track for daily number of COVID-19 cases. 
+				\item Automate quality assurance process using Google Sheet API and pandas
+				\item Fix trend breaks, correct input errors, and communicate with team members.
+			\end{itemize}
+		
+		
+		\subsection*{Beijing Mankai Tech LLC.{\normalfont, Beijing, China \hfill Summer 2019}}
+		\subsubsection*{Data Analyst Internship}
+		\begin{itemize}
+			\item Analyzed data of financial statements, designed and optimized statement template.
+		\end{itemize}
+	
+		\subsection*{East Los Angeles College{\normalfont, Monterey Park, CA \hfill Aug. 2017 – Jun. 2018}}
+		\subsubsection*{Supplemental Instruction Coach}
+		\begin{itemize}
+			\setlength\itemsep{-1pt}
+			\item Attended professors' classes, listened to students' needs, and designed teaching plans.
+			\item Formed study sessions, helped students' questions, and assigned extra practice problems.
+		\end{itemize}
+	
+	\section*{LEADERSHIP}
+	\divider
+		\subsection*{International Student Advancement Program{\normalfont, East Los Angeles College \hfill 2016 - 2017}}
+		\subsubsection*{Publicity Director}
+		\begin{itemize}
+			\setlength\itemsep{-1pt}
+			\item Designed and printed high quality minimal fliers for Food Sales, Lunar Festival, New Year Fair, and more club activities.
+			\item Communicated and collaborated with teammates to help and decorate club activities.
+		\end{itemize}
+	
+	\section*{PROJECT EXPERIENCE}
+	\divider
+	
+	\colorlet{myurlcolor}{github-black}
+	\hypersetup{urlcolor=myurlcolor!\myshade!black,colorlinks = true}
+	
+		\subsection*{Title: Mapping Uncanny Valley (Ongoing) \hfill {\normalfont Spet. 2020 - Present}}
+		\noindent
+		\href{https://github.com/Anthonyive/Research-Mapping-Uncanny-Valley.git}{\faIcon{github}} The aim of this project was to help answer what makes text creepy.
+		\begin{itemize}
+			\setlength\itemsep{-1pt}
+			\item Quantized text posts on reddit (r/NoSleep and r/Confessions) 
+			\item Word and sentence embeddings using word2vec, fasttext, and \href{https://arxiv.org/abs/1908.10084}{Sentence-BERT}
+			\item GPU acceleration for spaCy NLP and ANN.
+		\end{itemize}
+	
+		\subsection*{Title: Research on LATEX Writing Style of arXiv Authors \hfill {\normalfont Summer 2020}}
+		\noindent
+		\href{https://github.com/Anthonyive/machine-learning-project.git}{\faIcon{github}} The aim of this project was to cluster writing styles of different authors in \href{https://arxiv.org}{arXiv.org}’s Math topic. 
+		\begin{itemize}
+			\setlength\itemsep{-1pt}
+			\item Web scrapped source files and .tex files of papers in Math topic using R
+			\item Text filtering using regex and tallied commands, environments, and packages usage using Python
+		\end{itemize}
+	
+	\section*{SKILLS}
+	\divider
+		\subsection*{Programming Languages}
+		\noindent
+		Proficient: Python, R, \LaTeX, \CC \\ 
+		Familiar: SQL, C, Bash, Zsh, Assembly Language (AT\&T style), and Emacs Lisp
+	
+	
+\end{document}
