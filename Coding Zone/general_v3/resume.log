@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.4.7)  26 OCT 2020 13:30
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.4.7)  31 OCT 2020 00:06
  restricted system commands enabled.
 **resume.tex
 (./resume.tex
@@ -894,29 +894,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--115
 
  []
 
-
-Package hyperref Warning: Option `colorlinks' has already been used,
-(hyperref)                setting the option has no effect on input line 156.
-
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 181.
+(Font)              <7> on input line 120.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 181.
+(Font)              <5> on input line 120.
 
 Package hyperref Warning: Option `colorlinks' has already been used,
-(hyperref)                setting the option has no effect on input line 185.
-
-
-Package hyperref Warning: Option `colorlinks' has already been used,
-(hyperref)                setting the option has no effect on input line 185.
+(hyperref)                setting the option has no effect on input line 155.
 
 
 Package hyperref Warning: Option `colorlinks' has already been used,
-(hyperref)                setting the option has no effect on input line 185.
+(hyperref)                setting the option has no effect on input line 187.
 
 
 Package hyperref Warning: Option `colorlinks' has already been used,
-(hyperref)                setting the option has no effect on input line 185.
+(hyperref)                setting the option has no effect on input line 187.
+
+
+Package hyperref Warning: Option `colorlinks' has already been used,
+(hyperref)                setting the option has no effect on input line 187.
+
+
+Package hyperref Warning: Option `colorlinks' has already been used,
+(hyperref)                setting the option has no effect on input line 187.
 
 
 Package Fancyhdr Warning: \footskip is too small (0.0pt): 
@@ -927,15 +927,15 @@ This may cause the page layout to be inconsistent, however.
 [1{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 185.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 185.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 187.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 187.
 
 (./resume.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 185.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 185.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 187.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 187.
 Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 185.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 187.
 )
 
 Here is how much of LuaTeX's memory you used:
@@ -944,7 +944,7 @@ Here is how much of LuaTeX's memory you used:
  438 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 5 attribute, 53 glue_spec,
  5 attribute_list, 2 write nodes
-   avail lists: 2:528,3:161,4:70,5:283,6:51,7:3017,8:27,9:171,10:17,11:210
+   avail lists: 2:558,3:166,4:76,5:297,6:52,7:3136,8:27,9:178,10:17,11:218
  43130 multiletter control sequences out of 65536+600000
  59 fonts using 14753995 bytes
  60i,12n,81p,407b,1080s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -953,7 +953,7 @@ me5Brands-Regular-400.otf></Users/anthony/Library/Fonts/EBGaramond-VariableFont_
 wght.ttf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/fontawesome5/
 FontAwesome5Free-Solid-900.otf></usr/local/texlive/2020/texmf-dist/fonts/opentyp
 e/public/ebgaramond/EBGaramond-Bold.otf>
-Output written on resume.pdf (1 page, 47609 bytes).
+Output written on resume.pdf (1 page, 47734 bytes).
 
 PDF statistics: 53 PDF objects out of 1000 (max. 8388607)
  37 compressed objects within 1 object stream
