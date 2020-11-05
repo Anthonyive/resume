@@ -2,23 +2,21 @@
 
 Resume created here!
 
----
-
 ## Checklist
 
 ### Resume Format
 
-- [ ] All dates, bullets, sections are aligned evenly and consistently throughout the resume.
-- [ ] Resume is easy to read, with proper grammar, punctuation and spelling.
-- [ ] Avoid the use of personal pronouns (i.e. “I”, “me”, “you”, “we”)
-- [ ] Your 1-page resume does not use a template with tables to separate each section.
-- [ ] Your document does not change font sizes, or use multiple colors
-- [ ] Omit personal information such as marital status, social security number, or include a photograph.
+- [x] All dates, bullets, sections are aligned evenly and consistently throughout the resume.
+- [x] Resume is easy to read, with proper grammar, punctuation and spelling.
+- [x] Avoid the use of personal pronouns (i.e. “I”, “me”, “you”, “we”)
+- [x] Your 1-page resume does not use a template with tables to separate each section.
+- [x] Your document does not change font sizes, or use multiple colors
+- [x] Omit personal information such as marital status, social security number, or include a photograph.
 
 ### Heading
 
-- [ ] Includes Name, Address, Telephone Number, Email Address
-- [ ] Avoid large/distracting heading elements (lines, bars, graphics, etc.) Your name should dominate the heading.
+- [x] Includes Name, Address, Telephone Number, Email Address
+- [x] Avoid large/distracting heading elements (lines, bars, graphics, etc.) Your name should dominate the heading.
 
 ### Objective Statement (optional)
 
@@ -34,28 +32,28 @@ Resume created here!
 
 ### Skills Section (optional)
 
-- [ ] List all your skills based on the most relevant specific you acquired that is most relevant to the position and industry (you can include anything you have learned from class or on your own).
-- [ ] This section can include various skills such as computer hardware/software, programs, machine operation, licenses, certificates, design tools etc. that directly relate to the position.
+- [x] List all your skills based on the most relevant specific you acquired that is most relevant to the position and industry (you can include anything you have learned from class or on your own).
+- [x] This section can include various skills such as computer hardware/software, programs, machine operation, licenses, certificates, design tools etc. that directly relate to the position.
 
 ### Education
 
-- [ ] Write out the official title of your degree you are receiving (Master of Science in Computer Science).
-- [ ] List your education in reverse chronological order, starting with the most recent degree and work backwards.
+- [x] Write out the official title of your degree you are receiving (Master of Science in Computer Science).
+- [x] List your education in reverse chronological order, starting with the most recent degree and work backwards.
 - [ ] If you want to list your coursework, make sure you include the entire name of the course and provide a minimum of 2-3 statements that highlights a skill, knowledge or experience that is relevant to the position you are seeking.
 
 ### Experience/Internship/Volunteering
 
-- [ ] Under each experience, include the name of organization, job title, location, and dates.
-- [ ] Provide a minimum of 2-3 statements for each position that demonstrates a skill, experience or ability.
-- [ ] Begin each phrase with an action verb and avoid repeating the same action verbs throughout the document.
-- [ ] Emphasize results produced, significant achievements, and recognition from others.
-- [ ] Quantify when possible and use specific examples of impact or purpose to your accomplishment
-- [ ] Avoid listing unrelated or generic duties or start phrases with “my responsibilities (or duties) included”
-- [ ] Use past tense verbs (helped, assisted, provided, etc.) for positions you no longer work for, and current tense for any current employment.
+- [x] Under each experience, include the name of organization, job title, location, and dates.
+- [x] Provide a minimum of 2-3 statements for each position that demonstrates a skill, experience or ability.
+- [x] Begin each phrase with an action verb and avoid repeating the same action verbs throughout the document.
+- [x] Emphasize results produced, significant achievements, and recognition from others.
+- [x] Quantify when possible and use specific examples of impact or purpose to your accomplishment
+- [x] Avoid listing unrelated or generic duties or start phrases with “my responsibilities (or duties) included”
+- [x] Use past tense verbs (helped, assisted, provided, etc.) for positions you no longer work for, and current tense for any current employment.
 
 ### Resume Tips
 
-- [ ] Avoid the use of “fancy” cursive fonts, graphics, italics, and tables, your resume should look simple
+- [x] Avoid the use of “fancy” cursive fonts, graphics, italics, and tables, your resume should look simple
 - [ ] Try to organize your document based on how relevant the information applies to the position. (There is no typical set order, the placement of each section should vary in the order of most relevant information from top to bottom.)
 - [ ] Explain your exact actions and include at least one of the following: purpose, impact or results (what you learned/changed) of the action. (coordinated the timeline of XYZ project and delegated the responsibilities of seven team members in order to improve future ABC processes)
 - [ ] Customize your document to a specific position when applying to a job posting, or a resume that focuses on job types for career fairs.
