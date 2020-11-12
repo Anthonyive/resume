@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.4.7)  4 NOV 2020 19:51
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.4.7)  11 NOV 2020 22:03
  restricted system commands enabled.
 **resume.tex
 (./resume.tex
@@ -922,7 +922,7 @@ Here is how much of LuaTeX's memory you used:
  438 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 5 attribute, 53 glue_spec,
  5 attribute_list, 2 write nodes
-   avail lists: 2:576,3:171,4:70,5:322,6:53,7:3322,8:27,9:186,10:17,11:245
+   avail lists: 2:576,3:172,4:70,5:323,6:53,7:3344,8:27,9:187,10:17,11:246
  43131 multiletter control sequences out of 65536+600000
  59 fonts using 14753995 bytes
  60i,12n,81p,407b,1080s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -931,7 +931,7 @@ me5Brands-Regular-400.otf></Users/anthony/Library/Fonts/EBGaramond-VariableFont_
 wght.ttf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/fontawesome5/
 FontAwesome5Free-Solid-900.otf></usr/local/texlive/2020/texmf-dist/fonts/opentyp
 e/public/ebgaramond/EBGaramond-Bold.otf>
-Output written on resume.pdf (1 page, 47618 bytes).
+Output written on resume.pdf (1 page, 47868 bytes).
 
 PDF statistics: 53 PDF objects out of 1000 (max. 8388607)
  37 compressed objects within 1 object stream
