@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.4.7)  11 NOV 2020 22:03
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.4.7)  17 NOV 2020 17:22
  restricted system commands enabled.
 **resume.tex
 (./resume.tex
@@ -905,15 +905,15 @@ This may cause the page layout to be inconsistent, however.
 [1{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 178.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 178.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 179.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 179.
 
 (./resume.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 178.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 178.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 179.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 179.
 Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 178.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 179.
 )
 
 Here is how much of LuaTeX's memory you used:
@@ -922,7 +922,7 @@ Here is how much of LuaTeX's memory you used:
  438 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 5 attribute, 53 glue_spec,
  5 attribute_list, 2 write nodes
-   avail lists: 2:576,3:172,4:70,5:323,6:53,7:3344,8:27,9:187,10:17,11:246
+   avail lists: 2:588,3:176,4:72,5:325,6:54,7:3369,8:27,9:191,10:17,11:249
  43131 multiletter control sequences out of 65536+600000
  59 fonts using 14753995 bytes
  60i,12n,81p,407b,1080s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -931,7 +931,7 @@ me5Brands-Regular-400.otf></Users/anthony/Library/Fonts/EBGaramond-VariableFont_
 wght.ttf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/fontawesome5/
 FontAwesome5Free-Solid-900.otf></usr/local/texlive/2020/texmf-dist/fonts/opentyp
 e/public/ebgaramond/EBGaramond-Bold.otf>
-Output written on resume.pdf (1 page, 47868 bytes).
+Output written on resume.pdf (1 page, 47888 bytes).
 
 PDF statistics: 53 PDF objects out of 1000 (max. 8388607)
  37 compressed objects within 1 object stream
