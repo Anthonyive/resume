@@ -1,6 +1,10 @@
 % Please build with xelatex + lualatex
 
-\documentclass{article}
+\documentclass[12pt]{article}
+
+\usepackage{sectsty}
+
+\allsectionsfont{\fontsize{12}{15}\selectfont}
 
 % generate random texts
 \usepackage{lipsum}
@@ -58,23 +62,21 @@
 	colorlinks = true,
 }
 
-
+%\fancyhead[L]{\fontsize{10}{12} \selectfont Personal Statement}
 \fancyhead[L]{
+	\fontsize{11}{12} \selectfont
 	% name
 	\textbf{\Huge Yuchen Zhang} \\ \medskip
 	% address
-	\faIcon{home} \enskip
-	\href{https://www.google.com/maps?q=1977+Lupine+Ave,+CA,+91755}{1977 Lupine Ave, Monterey Park, CA} \hfill
+	\href{https://www.google.com/maps?q=Monterey+Park,+CA,+91755}{Monterey Park, CA} \hfill \textbullet \hfill
 	% email
-	\urlstyle{same}
-	\faIcon{inbox} \enskip
-	\href{mailto:anthony.yuchen@gmail.com}{\nolinkurl{anthony.yuchen@gmail.com}} \hfill
+	\href{mailto:anthony.yuchen@gmail.com}{anthony.yuchen@gmail.com} \hfill \textbullet \hfill
 	% phone
-	\faIcon{phone} \enskip \href{tel:13238688380}{(323) 868-8380} \\
+	\href{tel:13238688380}{(323) 868-8380} \hfill \textbullet \hfill
 	% linkedin profile
-	\faIcon{linkedin} \enskip \href{https://www.linkedin.com/in/anthonyive}{linkedin.com/in/anthonyive} \hfill
+	\href{https://www.linkedin.com/in/anthonyive}{linkedin.com/in/anthonyive} \hfill \textbullet \hfill
 	% github profile
-	\faIcon{github} \enskip \href{https://www.github.com/anthonyive}{github.com/anthonyive}
+	\href{https://www.github.com/anthonyive}{github.com/anthonyive}
 }
 \renewcommand{\headrulewidth}{0pt}
 
@@ -100,21 +102,21 @@
 	\divider
 		\subsection*{University of Southern California \hfill {\normalfont Los Angeles, CA}}
 		\noindent
-		Viterbi School of Engineering \hfill August 2020 \\
+		Viterbi School of Engineering \hfill August 2022 \\
 		Master of Science, Applied Data Science \hfill GPA 4.0 \\
 		
 		\subsection*{University of California, Los Angeles \hfill {\normalfont Los Angeles, CA}}
 		\noindent
-		College of Letters and Science \hfill August 2018 \\
+		College of Letters and Science \hfill August 2020 \\
 		Bachelor of Science, Applied Mathematics with a minor in Statistics \hfill GPA 3.863 \\
 		
 	\section*{SKILLS}
 	\divider
 	\begin{itemize}[leftmargin=*]
 		\setlength\itemsep{1pt}
-		\item[] \textbf{Programming Languages:} Python, R, \LaTeX, UNIX Shell, C, \CC, MATLAB, HTML 5, CSS 3, Assembly Language (AT\&T style), and Emacs Lisp
+		\item[] \textbf{Programming Languages:} Python, R, MATLAB, UNIX Shell
 		\item[] \textbf{Database Management:} SQLite, MySQL
-		\item[] \textbf{Tools:} (include but are not limited to) Hadoop, Spark, GitHub, RStudio, Tensorflow, Pandas, Numpy, Markdown, Flask, Bootstrap, \LaTeX, DrawIo, Photoshop, etc.
+		\item[] \textbf{Tools:} Hadoop, Spark, GitHub, Tensorflow, Pandas, Numpy, \LaTeX, etc.
 	\end{itemize}
 		
 	\section*{WORK EXPERIENCE}
@@ -123,10 +125,10 @@
 			\subsubsection*{Emergency Data Relief Internship, QA track}
 			\begin{itemize}
 				\setlength\itemsep{-1pt}
-				\item Maintain quality assurance track for the daily number of COVID-19 cases 
-				\item Direct quality assurance automation process using Google Sheet API and pandas
-				\item Investigate trend breaks, diagnose input errors, and communicate with team members
-				\item Endorsed consistently reliable on QA
+				\item Maintained quality assurance track for the daily number of COVID-19 cases 
+				\item Directed quality assurance automation process using Google Sheet API and pandas
+				\item Investigated trend breaks, diagnosed input errors, and communicated with team members
+				\item Endorsed consistently meeting the deadlines on QA by the CEO
 			\end{itemize}
 		
 		
@@ -136,15 +138,7 @@
 			\item Analyzed data of financial statements, constructed and optimized statement template
 		\end{itemize}
 	
-		\subsection*{East Los Angeles College{\normalfont, Monterey Park, CA \hfill August 2017-June 2018}}
-		\subsubsection*{Supplemental Instruction Coach}
-		\begin{itemize}
-			\setlength\itemsep{-1pt}
-			\item Cooperated professors' classes, facilitated students' needs, and devised teaching plans
-			\item Coordinated study sessions, guided students' questions, and assigned extra practice problems
-		\end{itemize}
-	
-	\section*{PROJECTS}
+	\section*{ACADEMIC PROJECTS}
 	\divider
 	
 		\subsection*{Title: Mapping Uncanny Valley (Ongoing) \hfill {\normalfont September 2020-Present}}
@@ -152,8 +146,8 @@
 		\href{https://github.com/Anthonyive/Research-Mapping-Uncanny-Valley.git}{\faIcon{github}} The aim of the project is to help answer what makes text creepy.
 		\begin{itemize}
 			\setlength\itemsep{-1pt}
-			\item Best Project Achievement Award
-			\item Best Cyberphysical Data Science Team Award for a team of six people
+			\item Best Project Achievement Award in DataFest Fall 2020
+			\item Best Cyberphysical Data Science Team Award for a team of six people in DataFest Fall 2020
 			\item Conduct DNN/RNN model with accuracy up to 96\% 
 			\item Implement NLP embeddings using word2vec, fasttext, and \href{https://arxiv.org/abs/1908.10084}{Sentence-BERT} on subreddits
 		\end{itemize}
