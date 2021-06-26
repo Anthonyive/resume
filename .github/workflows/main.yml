@@ -1,0 +1,71 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+    
+  pull_request:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # compile tex file
+      - name: LaTeX Action
+        uses: xu-cheng/latex-action@v2
+        with:
+          # The root LaTeX file to be compiled
+          root_file: resume.tex
+          latexmk_use_lualatex: true
+          
+      # format datetime to 'v2021.6.26'
+      - name: Set env
+        run: echo "::set-env name=NOW::$(date +'v%Y.%m.%d')"
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+          
+      # check if tag already exists in current day. If so, it will 
+      # delete the current tag and replace with the new one
+      
+      # check if tag already exists
+      - uses: mukunku/tag-exists-action@v1.0.0
+        id: checkTag
+        with: 
+          tag: ${{ env.NOW }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # delete tag if exists
+      - uses: dev-drprasad/delete-tag-and-release@v0.2.0
+        if: ${{ steps.checkTag.outputs.exists }}
+        with:
+          delete_release: true # default: false
+          tag_name: ${{ env.NOW }} # tag name to delete
+          repo: anthonyive/resume # target repo (optional). defaults to repo running this action
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      # create release
+      - name: Create release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "resume.pdf"
+          tag: ${{ env.NOW }}
+          draft: false
+          token: ${{ secrets.GITHUB_TOKEN }}
