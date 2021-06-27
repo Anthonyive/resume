@@ -67,5 +67,4 @@ jobs:
         with:
           artifacts: "resume.pdf"
           tag: ${{ env.NOW }}
-          draft: false
           token: ${{ secrets.GITHUB_TOKEN }}
