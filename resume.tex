@@ -1,6 +1,6 @@
 % Please build with lualatex
 
-\documentclass[12pt]{article}
+\documentclass[11pt]{article}
 
 % Change section font size
 \usepackage{sectsty}
@@ -20,18 +20,19 @@
 
 % Set margin to 0.5in
 \usepackage[
-	margin=0.5in,     % set margin to 0.5in
-	top=90pt,         % distance of the text block from the top of the page
-	headheight=120pt, % height for the header block
-	headsep=11pt,     % distance from the header block to the text block
-	heightrounded,    % ensure an integer number of lines
-	nofoot,           % hide foot
-	% showframe,        % uncomment to show frame
+	margin=0.5in,     		 % set margin to 0.5in
+	top=90pt,         		   % distance of the text block from the top of the page
+	headheight=120pt, 	 % height for the header block
+	headsep=11pt,     		% distance from the header block to the text block
+	heightrounded,    		% ensure an integer number of lines
+	nofoot,           			  % hide foot
+	% showframe,        	% uncomment to show frame
 	]{geometry}
 
 % Change font
 \usepackage{fontspec}
-\setmainfont[Numbers={Lining}]{EB Garamond}
+%\setmainfont[Numbers={Lining}]{EB Garamond}
+\setmainfont{Times New Roman}
 
 % For good looking trademark symbol
 \usepackage{textcomp}
@@ -69,38 +70,47 @@
 }
 
 % Title and contacts
-\fancyhead[L]{
+\fancyhead[C]{
 	% Title name
-	\begin{tightcenter}
-		\textbf{\Huge Yuchen Zhang} \\ \medskip
-	\end{tightcenter}
+	\textbf{\Huge Yuchen Zhang} \\ 
+	% Email
+	\href{mailto:yzhang71@usc.edu}{yzhang71@usc.edu}  | 
+	% Phone
+	\href{tel:13238688380}{(323) 868-8380} \\
 	% Personal website (disabled for now)
-	\href{https://anthonyive.github.io/}{anthonyive.github.io} 
-    \hfill | \hfill
+	\href{https://anthonyive.github.io/}{anthonyive.github.io}  | 
 	% GitHub profile
-	\href{https://www.github.com/anthonyive}{github.com/anthonyive} 
-	\hfill | \hfill
+	\href{https://www.github.com/anthonyive}{github.com/anthonyive}  | 
 	% LinkedIn profile
 	\href{https://www.linkedin.com/in/anthonyive}{linkedin.com/in/anthonyive} 
-	\hfill | \hfill
-	% Email
-	\href{mailto:yzhang71@usc.edu}{yzhang71@usc.edu} 
-	\hfill | \hfill
-	% Phone
-	\href{tel:13238688380}{(323) 868-8380}
 }
 
 % Remove header separate line
 \renewcommand{\headrulewidth}{0pt}
 
 % Horizontal line
-\newcommand{\divider}{\vskip2pt{\color{black}\hrule}\vskip2pt}
+\usepackage{calc}
+\newcommand{\divider}[1]{%
+	\vskip-2pt %
+	{%
+		\color{black}%
+		\hrule%
+	}%
+	\nointerlineskip%
+	\noindent%
+	{%
+		\color{black}%
+		\hrule width #1 height 1pt%
+	}%
+	\vskip5pt%
+}
+%\newcommand{\divider}{\noindent\hrule\nointerlineskip\noindent\hrule{3cm}{5pt}}
 \setlength{\parindent}{0pt}
 
 
 \begin{document}
 \section*{EDUCATION}
-\divider
+\divider{8em}
 \subsection*{University of Southern California{\normalfont, \textit{Los Angeles, CA} \hfill June 2022}}
 \noindent
 Master of Science, Applied Data Science
@@ -118,8 +128,7 @@ Cumulative GPA: 3.86/4.0
 \vspace{0.1in}
 
 \section*{SKILLS}
-\divider
-\vspace{3pt}
+\divider{5em}
 \begin{description}
     \setlength\itemsep{-1pt}
     \item[Programming Languages] Python, R, Bash, etc.
@@ -129,7 +138,7 @@ Cumulative GPA: 3.86/4.0
 \end{description}
 
 \section*{WORK EXPERIENCE}
-\divider
+\divider{12em}
 \subsection*{Research Internship{\normalfont, CarmaCam, \textit{Remote} \hfill May 2021-August 2021}}
 \begin{itemize}
     \setlength\itemsep{-1pt}
@@ -150,7 +159,7 @@ Cumulative GPA: 3.86/4.0
 \end{itemize}
 
 \section*{ACADEMIC PROJECTS}
-\divider
+\divider{13em}
 
 \subsection*{Title: Mapping Uncanny Valley \hfill {\normalfont September 2020-May 2021}}
 \noindent
@@ -194,7 +203,7 @@ Cumulative GPA: 3.86/4.0
 % \end{itemize}
 
 \section*{LEADERSHIP \& INVOLVEMENT}
-\divider
+\divider{18em}
 \subsection*{Publicity Director{\normalfont, International Student Advancement Program, East Los Angeles College \hfill	2016-2017}}
 \begin{itemize}
     \setlength\itemsep{-1pt}
