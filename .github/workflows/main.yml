@@ -43,6 +43,11 @@ jobs:
           # The root LaTeX file to be compiled
           root_file: resume.tex
           latexmk_use_lualatex: true
+          latexmk_shell_escape: true
+          pre_compile: |
+              apk add msttcorefonts-installer fontconfig
+              update-ms-fonts
+              fc-cache -f
           
       # format datetime to 'v2021.6.26'
       - name: Set env
