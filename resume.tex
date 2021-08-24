@@ -2,115 +2,11 @@
 
 \documentclass[11pt]{article}
 
-% Change section font size
-\usepackage{sectsty}
-\allsectionsfont{\fontsize{12}{15}\selectfont}
-
-% For generating random texts
-\usepackage{lipsum}
-
-% Suppress page numbering
-\pagenumbering{gobble}
-
-% Spacing between sections
-\usepackage{titlesec}
-\titlespacing{\section}{0pt}{-1pt}{-1pt}
-\titlespacing{\subsection}{0pt}{-1pt}{-1pt}
-\titlespacing{\subsubsection}{0pt}{-1pt}{-1pt}
-
-% Set margin to 0.5in
-\usepackage[
-	margin=0.5in,     		 % set margin to 0.5in
-	top=90pt,         		   % distance of the text block from the top of the page
-	headheight=120pt, 	 % height for the header block
-	headsep=11pt,     		% distance from the header block to the text block
-	heightrounded,    		% ensure an integer number of lines
-	nofoot,           			  % hide foot
-	% showframe,        	% uncomment to show frame
-	]{geometry}
-
-% Change font
-\usepackage{fontspec}
-% \setmainfont[Numbers={Lining}]{EB Garamond}
-\setmainfont{Times New Roman}
-
-% For good looking trademark symbol
-\usepackage{textcomp}
-\usepackage{xspace}
-
-% Affiliations
-\title{resume}
-\author{Yuchen Zhang}
-\date{\today}
-
-% Header
-\usepackage{fancyhdr} % fancy header
-\usepackage{hyperref} % for clickable emails and phone numbers
-\pagestyle{fancy}     % for displaying title and contacts
-\fancyhf{}            % clear all fields
-
-% Icons and hyperlinks
-\usepackage{fontawesome5}       % icons
-\usepackage[dvipsnames]{xcolor} % icon and hyperlink colors
-% Remove blue boxes around links 
-\newcommand\myshade{85}
-\colorlet{myurlcolor}{black}
-\hypersetup{
-	urlcolor   = myurlcolor!\myshade!black,
-	colorlinks = true,
-}
-
-% Center alignment for title
-\newenvironment{tightcenter}{%
-	\setlength\topsep{0pt}
-	\setlength\parskip{0pt}
-	\begin{center}
-	}{%
-	\end{center}
-}
-
-% Title and contacts
-\fancyhead[C]{
-	% Title name
-	\textbf{\Huge Yuchen Zhang} \\ 
-	% Email
-	\href{mailto:yzhang71@usc.edu}{yzhang71@usc.edu}  | 
-	% Phone
-	\href{tel:13238688380}{(323) 868-8380} \\
-	% Personal website (disabled for now)
-	\href{https://anthonyive.github.io/}{anthonyive.github.io}  | 
-	% GitHub profile
-	\href{https://www.github.com/anthonyive}{github.com/anthonyive}  | 
-	% LinkedIn profile
-	\href{https://www.linkedin.com/in/anthonyive}{linkedin.com/in/anthonyive} 
-}
-
-% Remove header separate line
-\renewcommand{\headrulewidth}{0pt}
-
-% Horizontal line
-\usepackage{calc}
-\newcommand{\divider}[1]{%
-	\vskip-2pt %
-	{%
-		\color{black}%
-		\hrule%
-	}%
-	\nointerlineskip%
-	\noindent%
-	{%
-		\color{black}%
-		\hrule width #1 height 1pt%
-	}%
-	\vskip5pt%
-}
-%\newcommand{\divider}{\noindent\hrule\nointerlineskip\noindent\hrule{3cm}{5pt}}
-\setlength{\parindent}{0pt}
+\usepackage{preamble}
 
 
 \begin{document}
-\section*{EDUCATION}
-\divider{8em}
+\myHeading{EDUCATION}
 \subsection*{University of Southern California{\normalfont, \textit{Los Angeles, CA} \hfill June 2022}}
 \noindent
 Master of Science, Applied Data Science
@@ -127,44 +23,55 @@ CGPA: 3.86/4.0
 
 \vspace{0.1in}
 
-\section*{SKILLS}
-\divider{5em}
-\begin{description}
-    \setlength\itemsep{-1pt}
+\myHeading{SKILLS}
+\begin{compactdesc}
     \item[Programming Languages] Python, R, Bash, etc.
     \item[Database Management] SQLite, MySQL, MongoDB, Firebase, Hadoop HDFS
     \item[Tools] Algorithms, Flask, Jekyll, GitHub, Tensorflow, Pandas, Numpy, \LaTeX, Spark DataFrame \& RDD, etc.
-\end{description}
+\end{compactdesc}
+\vspace{0.1in}
 
-\section*{WORK EXPERIENCE}
-\divider{12em}
+\myHeading{WORK EXPERIENCE}
+\subsection*{Course Producer{\normalfont, USC Viterbi School of Engineering, 
+\textit{CA} \hfill 
+August 2021-Present}}
+\begin{compactitem}
+	\item Actively assisting 90+ students in Foundations of Data Management 
+	(DSCI 551)
+	\item Holding office hours to help debug students’ programming assignments 
+	and to reinforce 
+	course content 
+	\item Helping the Professor in grading homeworks, labs and project, 
+	proctoring exams, and 
+	answering questions on Piazza
+\end{compactitem}
+\vspace{0.1in}
+
 \subsection*{Research Internship{\normalfont, CarmaCam, \textit{Remote} \hfill May 2021-August 2021}}
-\begin{itemize}
-    \setlength\itemsep{-1pt}
+\begin{compactitem}
     \item Upgraded CarmaCam ML scoring website's API and updated website UI
     \item Re-designed the CarmaCam web app using Parallel Agile\textregistered\xspace CodeBot\textregistered
     \item Aggregated API calls and integrated the website with Node.JS
-\end{itemize}
+\end{compactitem}
+\vspace{0.1in}
 
 \subsection*{Emergency Data Relief Internship (QA track){\normalfont, BroadStreet, \textit{Remote} \hfill September 2020-December 2020}}
-\begin{itemize}
-    \setlength\itemsep{-1pt}
+\begin{compactitem}
     \item Maintained quality assurance track for daily number of COVID-19 cases
     \item Systematized \href{https://github.com/Anthonyive/broadstreet-qa-automation.git}{QA automation} 
         process using Google Sheet API that cut the working time by more than 
         50\%
     \item Investigated trend breaks, diagnosed input errors, and communicated 
         with team members
-\end{itemize}
+\end{compactitem}
+\vspace{0.1in}
 
-\section*{ACADEMIC PROJECTS}
-\divider{13em}
-
-\subsection*{Title: Mapping Uncanny Valley \hfill {\normalfont September 2020-May 2021}}
+\myHeading{ACADEMIC PROJECTS}
+\subsection*{Title: Mapping Uncanny Valley \hfill {\normalfont September 
+2020-May 2021}}
 \noindent
 \href{https://github.com/Anthonyive/Research-Mapping-Uncanny-Valley.git}{\faIcon{github}} Goal: To help answer what makes text creepy.
-\begin{itemize}
-    \setlength\itemsep{-1pt}
+\begin{compactitem}
     \item Best Project Achievement Award and Best Data Science Open and 
         Sharing Practices Award
     \item Best Cyberphysical Data Science Team Award for a team of six people 
@@ -174,42 +81,43 @@ CGPA: 3.86/4.0
     \item Communicated and collaborated with professor and team members weekly
     \item Co-authored ``Mapping the Uncanny Valley in Text'' submission in 
         ICWSM 22
-\end{itemize}
+\end{compactitem}
+\vspace{0.1in}
 
 \subsection*{Title: Walmart Product Search \hfill {\normalfont January 2021-May 2021}}
 \noindent
 \href{https://github.com/Anthonyive/DSCI-551-Project.git}{\faIcon{github}} Goal: To build a full-stack Walmart product search UI.
-\begin{itemize}
-    \setlength\itemsep{-1pt}
+\begin{compactitem}
     \item Leveraged MongoDB to store 6000 paginated pages from Walmart 
         Affiliate API
     \item Built a Flask app for searching and filtering from over 300,000 
         product items with over 30 fields each
     \item Hosted the UI website on AWS EC2 and Route53 using Nginx with SSL 
         certificate
-\end{itemize}
+\end{compactitem}
+\vspace{0.1in}
 
-% \subsection*{Title: Analysis of Cyber Phishing Emails (\href{https://fradulent-emails-d3.ml}{https://fradulent-emails-d3.ml}) \hfill {\normalfont January 2021-May 2021}}
-% \noindent
-% \href{https://github.com/Anthonyive/DSCI-550-Assignments.git}{\faIcon{github}} Goal: To analyze fraudulent email dataset on Kaggle.
-% \begin{itemize}
-%     \setlength\itemsep{-1pt}
-%     \item Analyzed social engineering attack techniques using NLP (spaCy, 
-%         nltk, pre-trained neural nets, etc)
-%     \item Implemented GPT-2 and DCGAN frameworks to generate attacker 
-%         face images and emails
-%     \item Visualized results using D3.js and also hosted on AWS EC2
-% \end{itemize}
+\subsection*{Title: Analysis of Cyber Phishing Emails 
+(\href{https://fradulent-emails-d3.ml}{https://fradulent-emails-d3.ml}) \hfill 
+{\normalfont January 2021-May 2021}}
+\noindent
+\href{https://github.com/Anthonyive/DSCI-550-Assignments.git}{\faIcon{github}} 
+Goal: To analyze fraudulent email dataset on Kaggle.
+\begin{compactitem}
+ \item Analyzed social engineering attack techniques using NLP (spaCy, 
+     nltk, pre-trained neural nets, etc)
+ \item Implemented GPT-2 and DCGAN frameworks to generate attacker 
+     face images and emails
+\end{compactitem}
+\vspace{0.1in}
 
-\section*{LEADERSHIP \& INVOLVEMENT}
-\divider{18em}
+\myHeading{LEADERSHIP \& INVOLVEMENT}
 \subsection*{Publicity Director{\normalfont, International Student Advancement Program, East Los Angeles College \hfill	2016-2017}}
-\begin{itemize}
-    \setlength\itemsep{-1pt}
+\begin{compactitem}
     \item Designed fliers and banners for Food Sales, Lunar Festivals, 
         New Year Fairs, and other activities
     \item Arranged and presented with club members to help and decorate 
         club activities
-\end{itemize}
+\end{compactitem}
 
 \end{document}
