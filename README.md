@@ -6,6 +6,7 @@ My résumé is created here!
 
 The résumé will be published in a form of GitHub releases.
 
+- To view PDF in Google Docs: [Click Here](https://docs.google.com/viewer?url=https://github.com/Anthonyive/resume/releases/latest/download/resume.pdf)
 - To download PDF: [Click Here](https://github.com/Anthonyive/resume/releases/latest/download/resume.pdf)
 - To go to the latest release page: [Click Here](https://github.com/Anthonyive/resume/releases/latest)
 
@@ -19,7 +20,7 @@ GitHub Actions are set up for compiling tex file, generating pdf, and pushing to
 
 ### Build Engine & Font
 
-I love the `EB Garamond` font on my resume, so it is the default font. In addition, there are fontawesome icons (also some sort of font) on the resume. Because of these reasons, the build engine for `resume.tex` has to be `LuaLaTeX`.
+The default font is Times New Roman. In addition, there are fontawesome icons (also some sort of font) on the resume. Because of these reasons, the build engine for `resume.tex` has to be `LuaLaTeX`.
 
 ### Little Caveat About Calendar Versioning
 
