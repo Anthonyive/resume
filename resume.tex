@@ -24,7 +24,7 @@
 
 \begin{document}
 \myHeading{EDUCATION}
-\subsection*{University of Southern California{\normalfont, \textit{Los Angeles, CA} \hfill June 2022}}
+\subsection*{University of Southern California{\normalfont, \textit{Los Angeles, CA} \hfill May 2022}}
 \noindent
 Master of Science, Applied Data Science
 \hfill
@@ -43,10 +43,10 @@ CGPA: 3.86/4.0
 \myHeading{SKILLS}
 \vspace{0.05in}
 \begin{compactdesc}
-	\item[Topics] NLP, Machine Learning, Data Mining, Recommendation Systems, Data Processing
-    \item[Programming Languages] 3+ years of experience: Python, Basic knowledge: R, C++, Bash, etc.
+	\item[Topics] Natural Language Processing (NLP), Machine Learning, Data Mining/Big Data, Data Science, Statistics
+    \item[Programming Languages] 3+ years: Python | Basic knowledge: Java, R, C\texttt{++}, Bash, etc.
     \item[Database Management] SQLite, MySQL, MongoDB, Amazon DynamoDB, Firebase, Hadoop HDFS
-    \item[Tools] PyTorch, TensorFlow, scikit-learn, GitHub, Pandas, Apache Spark RDD, Distributed Systems, Algorithms, etc.
+    \item[Tools] PyTorch, TensorFlow, scikit-learn, GitHub, Pandas, PySpark, Distributed Systems, Algorithms, etc.
 \end{compactdesc}
 
 \vspace{0.1in}
@@ -55,11 +55,13 @@ CGPA: 3.86/4.0
 \subsection*{Student Worker{\normalfont, USC Institute for Creative
             Technologies,
             \textit{CA} \hfill
-            September 2021-Present}}
+            September 2021-April 2022}}
 \begin{compactitem}
-    \item Conduct data preprocessing, analysis, and visualizations on utterance data
-    \item Examine speech segmentation and separations on 200+ GB of audio files using ELAN and espnet
-    \item Modify hmm-learn package with Multinomial HMM and fine-tuning HMM models for predicting transcript codes with its confidence scores
+    \item Conducted data preprocessing, analysis, and visualizations on clinical psychology utterance data
+    \item Examined conversation segmentation and separations on 200+ GB of audio files using ELAN
+    \item Fine-tuned unsupervised Multinomial HMM models for predicting transcript codes with their confidence scores
+    \item Implemented supervised RNN and LSTM models for predicting utterance states
+    \item Generated LDA topic modeling models for exploring topics across states
 \end{compactitem}
 %\vspace{0.1in}
 
@@ -69,12 +71,11 @@ CGPA: 3.86/4.0
 \begin{compactitem}
     \item Actively assisted 90+ students in Foundations of Data Management
     (DSCI 551)
-    \item Unit tested students' homeworks using Python
+    \item Unit-tested students' homeworks using Python
     \item Held office hours to help debug students' programming assignments
     and to reinforce
     course content
-    \item Helped the Professor in grading homeworks, labs, and the project,
-    proctoring exams, and
+    \item Helped the Professor in grading homeworks, labs, and proctoring exams, and
     answering 180+ questions on Piazza
 \end{compactitem}
 %\vspace{0.1in}
@@ -84,33 +85,42 @@ CGPA: 3.86/4.0
     \item Upgraded the existing Machine Learning Scoring website with a new UI using Django and Celery
     % \item Re-designed the CarmaCam web app using Parallel Agile\textregistered\xspace CodeBot\textregistered
 %    \item Aggregated API calls and integrated the website with Node.JS
-	\item Migrated the database of ML scoring website from SQLite to MongoDB
+	\item Migrated the database of the ML scoring website from SQLite to MongoDB
 	\item Improved the database schema of CodeBot using EA Architect
 \end{compactitem}
 %\vspace{0.1in}
 
-\subsection*{Emergency Data Relief Internship (QA track){\normalfont, BroadStreet.io, \textit{Remote} \hfill September 2020-December 2020}}
-\begin{compactitem}
-    \item Maintained quality assurance track for the daily number of COVID-19 cases
-    \item Systematized \href{https://github.com/Anthonyive/broadstreet-qa-automation.git}{QA automation}
-    process using Google Sheet API that cut the working time by more than
-    50\%
-    % \item Investigated trend breaks, diagnosed input errors, and communicated
-    % with team members
-\end{compactitem}
+%\subsection*{Emergency Data Relief Internship (QA track){\normalfont, BroadStreet.io, \textit{Remote} \hfill September 2020-December 2020}}
+%\begin{compactitem}
+%    \item Maintained quality assurance track for the daily number of COVID-19 cases
+%    \item Systematized \href{https://github.com/Anthonyive/broadstreet-qa-automation.git}{QA automation}
+%    process using Google Sheet API that cut the working time by more than
+%    50\%
+%    % \item Investigated trend breaks, diagnosed input errors, and communicated
+%    % with team members
+%\end{compactitem}
 
 \vspace{0.1in}
 
 \myHeading{ACADEMIC PROJECTS}
+\subsection*{Title: Data Mining on the Yelp Dataset \hfill {\normalfont January 2022-April 2022}}
+\noindent
+Goal: To implement algorithms and build recommendation systems on a large dataset.
+\begin{compactitem}
+	\item 12 files and 100-350 lines of code
+	\item Implemented Locality Sensitive Hashing, and different types of collaborative-filtering recommendation systems: Item-based CF, Model-based CF, and Hybrid recommendation system. Fine-tuned Model-based CF with XGBoostRegressor
+	\item Community detection based on GraphFrames and based on Girvan-Newman Algorithm on an RDD level
+\end{compactitem}
+
 \subsection*{Title: The Influence of Pre- \& Post-processing on Document Summarization \hfill {\normalfont August
         2021-December 2021}}
 \noindent
-\href{https://github.com/Anthonyive/csci-544-project.git}{\faIcon{github}}  \href{https://www.youtube.com/watch?v=oVIVtOPeWEs}{\faIcon{youtube}} \href{https://arxiv.org/abs/2112.01660}{\textbf{arXiv}} Goal: To improve existing long document summarization model's performance.
+\href{https://github.com/Anthonyive/csci-544-project.git}{\faIcon{github}}  \href{https://www.youtube.com/watch?v=oVIVtOPeWEs}{\faIcon{youtube}} \href{https://arxiv.org/abs/2112.01660}{\textbf{arXiv}} Goal: To improve the existing long document summarization model's performance.
 \begin{compactitem}
     \item Implemented extractive-based baseline (e.g. TextRank) and Google's T5 text-to-text transformer model
-    \item Inspired team members to implement GPT-3 and XLNet models
-    \item Slight improved in R-1 score (15\%) and substantially improved R-2 scores (53\%) for certain datasets
-    \item Formulated team's workflow by using GitHub actions and branching
+%    \item Inspired team members to implement GPT-3 and XLNet models
+    \item Slight improvement in R-1 score (15\%) and substantially improved R-2 scores (53\%) for certain datasets
+%    \item Formulated team's workflow by using GitHub actions and branching
 \end{compactitem}
 %\vspace{0.1in}
 
@@ -125,9 +135,9 @@ CGPA: 3.86/4.0
     in DataFest Fall 2020
     \item Conducted DNN/RNN model with accuracy up to 96\% and implemented
     multiple NLP techniques
-    \item Studied 20+ papers and ideas, and collaborated with team weekly
+%    \item Studied 20+ papers and ideas, and collaborated with team weekly
     \item Co-authored ``Mapping the Uncanny Valley in Text'' submission in
-    ICWSM 22
+    ICWSM '22
 \end{compactitem}
 %\vspace{0.1in}
 
