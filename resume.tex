@@ -1,4 +1,28 @@
 % Please build with lualatex
+% VS Code -> LaTeX Workshop extension settings:
+% {
+%     "latex-workshop.latex.recipes": [
+%         {
+%             "name": "lualatex",
+%             "tools": ["lualatex"]
+%         }
+%     ],
+%     "latex-workshop.latex.tools": [
+%         {
+%             "name": "lualatex",
+%             "command": "lualatex",
+%             "args": [
+%                 "-synctex=1",
+%                 "-interaction=nonstopmode",
+%                 "-file-line-error",
+%                 "-output-directory=%OUTDIR%",
+%                 "%DOC%"
+%             ],
+%             "env": {}
+%         }
+%     ],
+%     "latex-workshop.linting.chktex.enabled": true
+% }
 
 \documentclass[11pt]{article}
 
@@ -8,10 +32,10 @@
 \newcommand\HUGE{\fontsize{26}{39}\selectfont}
 \fancyhead[C]{
 	% Title name
-	\textbf{\HUGE Yuchen Zhang} \\
+	\textbf{\HUGE{Yuchen Zhang}} \\
 	\vspace{0.05in} 
 	% Email
-	\href{mailto:yzhang71@usc.edu}{yzhang71@usc.edu}  | 
+	\href{mailto:anthony.yuchen@gmail.com}{anthony.yuchen@gmail.com}  | 
 	% Phone
 	\href{tel:13238688380}{(323) 868-8380} \\
 	% Personal website (disabled for now)
@@ -23,35 +47,18 @@
 }
 
 \begin{document}
-\myHeading{EDUCATION}
-\subsection*{University of Southern California{\normalfont, \textit{Los Angeles, CA} \hfill May 2022}}
-\noindent
-Master of Science, Applied Data Science
-\hfill
-CGPA: 3.78/4.0
 
-%\vspace{0.1in}
-
-\subsection*{University of California, Los Angeles{\normalfont, \textit{Los Angeles, CA} \hfill August 2020}}
-\noindent
-Bachelor of Science, Applied Mathematics with a minor in Statistics
-\hfill
-CGPA: 3.86/4.0
-
-\vspace{0.1in}
-
-\myHeading{SKILLS}
-\vspace{0.05in}
-\begin{compactdesc}
-	\item[Topics] Natural Language Processing (NLP), Machine Learning, Data Mining/Big Data, Data Science, Statistics
-    \item[Programming Languages] 3+ years: Python | Basic knowledge: Java, R, C\texttt{++}, Bash, etc.
-    \item[Database Management] SQLite, MySQL, MongoDB, Amazon DynamoDB, Firebase, Hadoop HDFS
-    \item[Tools] PyTorch, TensorFlow, scikit-learn, GitHub, Pandas, PySpark, Distributed Systems, MapReduce, Algorithms, etc.
-\end{compactdesc}
-
-\vspace{0.1in}
-
+%% WORK EXPERIENCE %%
 \myHeading{WORK EXPERIENCE}
+\subsection*{CAD Software Developer Engineer{\normalfont, Qualcomm Technologies, Inc.,
+            \textit{CA} \hfill
+            July 2022-Present}}
+\begin{compactitem}
+    \item Revitalizing verification tools for VLSI front end design
+    \item Developing automation scripts for generating SystemVerilog files
+    \item Conceptualizing documentation generation tools for Engineers
+\end{compactitem}
+
 \subsection*{Student Worker{\normalfont, USC Institute for Creative
             Technologies,
             \textit{CA} \hfill
@@ -80,14 +87,14 @@ CGPA: 3.86/4.0
 \end{compactitem}
 %\vspace{0.1in}
 
-\subsection*{Research Internship{\normalfont, CarmaCam, \textit{Remote} \hfill May 2021-August 2021}}
-\begin{compactitem}
-    \item Upgraded the existing Machine Learning Scoring website with a new UI using Django and Celery
-    % \item Re-designed the CarmaCam web app using Parallel Agile\textregistered\xspace CodeBot\textregistered
-%    \item Aggregated API calls and integrated the website with Node.JS
-	\item Migrated the database of the ML scoring website from SQLite to MongoDB
-	\item Improved the database schema of CodeBot using EA Architect
-\end{compactitem}
+% \subsection*{Research Internship{\normalfont, CarmaCam, \textit{Remote} \hfill May 2021-August 2021}}
+% \begin{compactitem}
+%     \item Upgraded the existing Machine Learning Scoring website with a new UI using Django and Celery
+%     % \item Re-designed the CarmaCam web app using Parallel Agile\textregistered\xspace CodeBot\textregistered
+% %    \item Aggregated API calls and integrated the website with Node.JS
+% 	\item Migrated the database of the ML scoring website from SQLite to MongoDB
+% 	\item Improved the database schema of CodeBot using EA Architect
+% \end{compactitem}
 %\vspace{0.1in}
 
 %\subsection*{Emergency Data Relief Internship (QA track){\normalfont, BroadStreet.io, \textit{Remote} \hfill September 2020-December 2020}}
@@ -102,20 +109,23 @@ CGPA: 3.86/4.0
 
 \vspace{0.1in}
 
+%% ACADEMIC PROJECTS %%
 \myHeading{ACADEMIC PROJECTS}
-\subsection*{Title: Data Mining on the Yelp Dataset \hfill {\normalfont January 2022-April 2022}}
+\subsection*{Data Mining on the Yelp Dataset \hfill {\normalfont{January 2022-April 2022}}}
 \noindent
-Goal: To implement algorithms and build recommendation systems on a large dataset.
+Goal: To implement algorithms and build recommendation systems on a large dataset
 \begin{compactitem}
 	\item 200k+ reviews. Code containing 12 files totaling around 1800 LOC (lines of code) using PySpark and MapReduce
-	\item Implemented Locality Sensitive Hashing, and different types of collaborative-filtering recommendation systems: Item-based CF, Model-based CF, and Hybrid recommendation system. Fine-tuned Model-based CF with XGBoostRegressor
+	\item Implemented Locality Sensitive Hashing, and different types of collaborative-filtering recommendation systems: Item-based CF, Model-based CF, and Hybrid recommendation system. 
+    \item Fine-tuned Model-based CF with XGBoostRegressor
 	\item Community detection based on GraphFrames and based on Girvan-Newman Algorithm on an RDD level
 \end{compactitem}
 
-\subsection*{Title: The Influence of Pre- \& Post-processing on Document Summarization \hfill {\normalfont August
-        2021-December 2021}}
+\subsection*{The Influence of Pre- \& Post-processing on Document Summarization \hfill {\normalfont{August
+        2021-December 2021}}}
 \noindent
-\href{https://github.com/Anthonyive/csci-544-project.git}{\faIcon{github}}  \href{https://www.youtube.com/watch?v=oVIVtOPeWEs}{\faIcon{youtube}} \href{https://arxiv.org/abs/2112.01660}{\textbf{arXiv}} Goal: To improve the existing long document summarization model's performance.
+% \href{https://github.com/Anthonyive/csci-544-project.git}{\faIcon{github}}  \href{https://www.youtube.com/watch?v=oVIVtOPeWEs}{\faIcon{youtube}} \href{https://arxiv.org/abs/2112.01660}{\textbf{arXiv}} 
+Goal: To improve existing long document summarization models' performance\hfill\textit{arXiv}: \href{https://arxiv.org/abs/2112.01660}{https://arxiv.org/abs/2112.01660}
 \begin{compactitem}
     \item Implemented extractive-based baseline (e.g. TextRank) and Google's T5 text-to-text transformer model
 %    \item Inspired team members to implement GPT-3 and XLNet models
@@ -124,14 +134,15 @@ Goal: To implement algorithms and build recommendation systems on a large datase
 \end{compactitem}
 %\vspace{0.1in}
 
-\subsection*{Title: Mapping Uncanny Valley \hfill {\normalfont September
-        2020-May 2021}}
+\subsection*{Mapping Uncanny Valley \hfill {\normalfont{September
+        2020-September 2022}}}
 \noindent
-\href{https://github.com/Anthonyive/Research-Mapping-Uncanny-Valley.git}{\faIcon{github}} Goal: To help answer what makes text creepy.
+% \href{https://github.com/Anthonyive/Research-Mapping-Uncanny-Valley.git}{\faIcon{github}} 
+Goal: To help answer what makes text creepy\hfill \textit{arXiv}: \href{https://arxiv.org/abs/2211.05369}{https://arxiv.org/abs/2211.05369}
 \begin{compactitem}
-    \item Best Project Achievement Award and Best Data Science Open and
+    \item Received Best Project Achievement Award and Best Data Science Open and
     Sharing Practices Award
-    \item Best Cyberphysical Data Science Team Award for a team of six people
+    \item Received Best Cyberphysical Data Science Team Award for a team of six people
     in DataFest Fall 2020
     \item Conducted DNN/RNN model with accuracy up to 96\% and implemented
     multiple NLP techniques
@@ -141,9 +152,10 @@ Goal: To implement algorithms and build recommendation systems on a large datase
 \end{compactitem}
 %\vspace{0.1in}
 
-\subsection*{Title: Walmart Product Search \hfill {\normalfont January 2021-May 2021}}
+\subsection*{Walmart Product Search \hfill {\normalfont{January 2021-May 2021}}}
 \noindent
-\href{https://github.com/Anthonyive/DSCI-551-Project.git}{\faIcon{github}} Goal: To build a full-stack Walmart product search UI.
+% \href{https://github.com/Anthonyive/DSCI-551-Project.git}{\faIcon{github}} 
+Goal: To build a full-stack Walmart product search UI
 \begin{compactitem}
     \item Leveraged MongoDB as a backend to store 6000 paginated pages from Walmart
     Affiliate API
@@ -177,4 +189,31 @@ Goal: To implement algorithms and build recommendation systems on a large datase
 %        club activities
 %\end{compactitem}
 
+\vspace{0.1in}
+
+%% EDUCATION %%
+\myHeading{EDUCATION}
+\subsection*{University of Southern California{\normalfont, \textit{Los Angeles, CA} \hfill May 2022}}
+\noindent
+Master of Science, Applied Data Science
+% \hfill
+% CGPA\@ 3.78/4.0
+
+\subsection*{University of California, Los Angeles{\normalfont, \textit{Los Angeles, CA} \hfill August 2020}}
+\noindent
+Bachelor of Science, Applied Mathematics with a minor in Statistics
+% \hfill
+% CGPA\@ 3.86/4.0
+
+\vspace{0.1in}
+
+%% SKILLS %%
+\myHeading{SKILLS}
+\vspace{0.05in}
+\begin{compactdesc}
+	\item[Topics] Software Development, Natural Language Processing (NLP), Machine Learning, Data Science, Statistics
+    \item[Programming Languages] Strong knowledge: Python | Basic knowledge: Perl, Java, R, C\texttt{++}, Bash, etc.
+    \item[Database Management] SQLite, MySQL, MongoDB, Amazon DynamoDB, Firebase, Hadoop HDFS
+    \item[Tools] PyTorch, TensorFlow, scikit-learn, GitHub, Pandas, PySpark, Distributed Systems, MapReduce, Algorithms, etc.
+\end{compactdesc}
 \end{document}
