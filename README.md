@@ -6,8 +6,10 @@ My résumé is created here!
 
 The résumé will be published in a form of GitHub releases.
 
+<!--
 - To view PDF in Google Docs: [Click Here](https://docs.google.com/viewer?url=https://github.com/Anthonyive/resume/releases/latest/download/resume.pdf)
 - To download PDF: [Click Here](https://github.com/Anthonyive/resume/releases/latest/download/resume.pdf)
+-->
 - To go to the latest release page: [Click Here](https://github.com/Anthonyive/resume/releases/latest)
 
 ## GitHub Actions CI/CD
