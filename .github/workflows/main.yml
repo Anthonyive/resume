@@ -39,8 +39,9 @@ jobs:
 
       # format datetime to 'v2021.6.26'
       - name: Set version number
-        run: echo "NOW=$(date +'v%Y.%m.%d')" >> $GITHUB_OUTPUT
-        #echo "::set-env name=NOW::$(date +'v%Y.%m.%d')"
+        run: |
+          # echo "NOW=$(date +'v%Y.%m.%d')" >> $GITHUB_OUTPUT
+          echo "::set-env name=NOW::$(date +'v%Y.%m.%d')"
         env:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
 
