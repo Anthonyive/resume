@@ -24,7 +24,8 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - name: Checkout repo 
+        uses: actions/checkout@v2
       
 # WIP: Download extra fonts
 #       - name: Install TeX Live packages # (Note that you may don't need some of them)
@@ -36,12 +37,19 @@ jobs:
 #       - name: Build font information caches
 #         run: fc-cache -rv
 
+      # format datetime to 'v2021.6.26'
+      - name: Set version number
+        run: echo "{NOW}={$(date +'v%Y.%m.%d')}" >> $GITHUB_OUTPUT
+        #echo "::set-env name=NOW::$(date +'v%Y.%m.%d')"
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+
       # compile tex file
       - name: LaTeX Action
         uses: xu-cheng/latex-action@v2
         with:
           # The root LaTeX file to be compiled
-          root_file: resume.tex
+          root_file: "resume_${{ env.NOW }}.pdf"
           latexmk_use_lualatex: true
           latexmk_shell_escape: true
           pre_compile: |
@@ -49,18 +57,12 @@ jobs:
               update-ms-fonts
               fc-cache -f
           
-      # format datetime to 'v2021.6.26'
-      - name: Set env
-        run: echo "{NOW}={$(date +'v%Y.%m.%d')}" >> $GITHUB_OUTPUT
-        #echo "::set-env name=NOW::$(date +'v%Y.%m.%d')"
-        env:
-          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
-          
       # check if tag already exists in current day. If so, it will 
       # delete the current tag and replace with the new one
       
       # check if tag already exists
-      - uses: mukunku/tag-exists-action@v1.0.0
+      - name: Check if tag already exists
+        uses: mukunku/tag-exists-action@v1.0.0
         id: checkTag
         with: 
           tag: ${{ env.NOW }}
@@ -68,7 +70,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # delete tag if exists
-      - uses: dev-drprasad/delete-tag-and-release@v0.2.1
+      - name: Remove existing tag ${{ env.NOW }}
+        uses: dev-drprasad/delete-tag-and-release@v0.2.1
         if: ${{ steps.checkTag.outputs.exists }}
         with:
           delete_release: true # default: false
@@ -78,9 +81,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
       # create release
-      - name: Create release
+      - name: Create release ${{ env.NOW }}
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "resume_*.pdf"
+          artifacts: "resume_${{ env.NOW }}.pdf"
           tag: ${{ env.NOW }}
           token: ${{ secrets.GITHUB_TOKEN }}
