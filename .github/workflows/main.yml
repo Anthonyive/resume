@@ -45,12 +45,15 @@ jobs:
         env:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
 
+      - name: Create a temporary renamed tex file
+        run: cp resume.tex resume_${{ env.NOW }}.tex
+
       # compile tex file
       - name: LaTeX Action
-        uses: xu-cheng/latex-action@v2
+        uses: xu-cheng/latex-action@v3
         with:
           # The root LaTeX file to be compiled
-          root_file: "resume_${{ env.NOW }}.pdf"
+          root_file: "resume_${{ env.NOW }}.tex"
           latexmk_use_lualatex: true
           latexmk_shell_escape: true
           pre_compile: |
@@ -88,3 +91,6 @@ jobs:
           artifacts: "resume_${{ env.NOW }}.pdf"
           tag: ${{ env.NOW }}
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Remove the temporary renamed tex file
+        run: rm resume_${{ env.NOW }}.tex
