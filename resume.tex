@@ -29,146 +29,228 @@
 \usepackage{preamble}
 
 % Title and contacts
-\newcommand\HUGE{\fontsize{26}{32}\selectfont}
+% \newcommand\HUGE{\fontsize{26}{32}\selectfont}
 \fancyhead{}
 \fancyhead[L]{
 	% name
-	\textbf{\HUGE{Yuchen Zhang}}
+	\Huge \textbf{Yuchen Zhang}
 }
 \fancyhead[R]{
-	% % Email
-	\href{mailto:anthony.yuchen@gmail.com}{anthony.yuchen@gmail.com}  | 
-	% Phone
-	\href{tel:13238688380}{(323) 868-8380} \\
-	% Personal website (disabled for now)
-	% \href{https://anthonyive.github.io/}{anthonyive.github.io}  | 
-	% GitHub profile
-	\href{https://www.github.com/anthonyive}{github.com/anthonyive}  | 
-	% LinkedIn profile
-	\href{https://www.linkedin.com/in/anthonyive}{linkedin.com/in/anthonyive} 
+    \begin{tabular}{r}
+        % Phone
+        \href{tel:13238688380}{+1 (323) 868-8380}\\
+        % % Email
+        \href{mailto:anthony.yuchen@gmail.com}{anthony.yuchen@gmail.com}\\ 
+        % Personal website (disabled for now)
+        % \href{https://anthonyive.github.io/}{anthonyive.github.io}  | 
+        % GitHub profile
+        % \href{https://www.github.com/anthonyive}{github.com/anthonyive}  \\
+        % LinkedIn profile
+        \href{https://www.linkedin.com/in/anthonyive}{linkedin.com/in/anthonyive}
+    \end{tabular}
 }
+% % Decorative horizontal line
+% \renewcommand{\headrulewidth}{2pt} % Adjust thickness
+% \renewcommand{\headrule}{\hbox to\headwidth{\leaders\hbox{---}\hfill}} % Dashed line
+
 
 \begin{document}
 
+\vspace*{0.01in}
+
+%% SKILLS %%
+\section*{\MakeUppercase{Skills}}
+\hrule
+\medskip
+
+% \vspace{0.05in}
+\begin{compactdesc}
+	% \item[Topics] Software Development, Natural Language Processing (NLP), Machine Learning, Data Science, Statistics
+    % \item[Programming Languages] Strong knowledge: Python | Basic knowledge: Perl, Java, R, C\texttt{++}, Bash, etc.
+    % \item[Database Management] SQLite, MySQL, MongoDB, Amazon DynamoDB, Firebase, Hadoop HDFS
+    % \item[Tools] PyTorch, TensorFlow, scikit-learn, GitHub, Pandas, PySpark, Distributed Systems, MapReduce, Algorithms, etc.
+    \item[Software Development] Python, Perl, Java, R, C++, Bash, SystemVerilog
+    \item[Version Control \& CI/CD] Git, ClearCase, Continuous Integration/Continuous Delivery (CI/CD)
+    \item[Data Science \& Machine Learning] NLP, TensorFlow, PyTorch, scikit-learn, Pandas, PySpark
+    \item[EDA \& VLSI] Electronic Design Automation (EDA), Very-Large-Scale Integration (VLSI), Tcl-Tk
+    \item[Databases] SQLite, MySQL, MongoDB, Amazon DynamoDB, Firebase, Hadoop HDFS
+    \item[Tools \& Systems] GNU Make, Linux, GitHub, Distributed Systems, MapReduce, Algorithms
+    \item[Soft Skills] Presentation Skills, Technical Communication
+
+    % \item[Software Development] Python, Perl, Java, R, C++, Bash
+    % \item[Data Science \& Machine Learning] NLP, TensorFlow, PyTorch, scikit-learn, Pandas, PySpark
+    % \item[Databases] SQLite, MySQL, MongoDB, Amazon DynamoDB, Firebase, Hadoop HDFS
+    % \item[Tools \& Systems] GitHub, Distributed Systems, MapReduce, Algorithms
+\end{compactdesc}
+
+\vspace{0.1in}
+
 %% WORK EXPERIENCE %%
-\myHeading{WORK EXPERIENCE}
-\subsection*{CAD Software Developer Engineer{\normalfont, Qualcomm Technologies, Inc.,
+\section*{\MakeUppercase{Work Experience}}
+\hrule
+\medskip
+\subsection*{Senior Font-End CAD Engineer{\normalfont, Qualcomm Technologies, Inc.,
             \textit{CA} \hfill
-            July 2022-Present}}
-\begin{compactitem}
-    \item Migrated and re-engineered internal QA web tool from Perl backend to Python OOP that being used by 300+ active users and 250k+ usage count
-    \item Administered the reengineering process with SDLC (Software Development Life Cycle) and standardized the contribution process for better collaboration
-    \item Improved code efficiency by more than 50% and reduced the run time from 20+ hours to a few hours
-    \item Implemented RTL level QA checks in Perl and Tcl/Tk that actively being used by 300+ chip designers
-    \item Developing internal SystemVerilog generation tool that greatly improves the efficiency and code accuracy for SoC teams (actively being used by 30+ users)
-- Maintaining quality code with quantity and contributed 2300+ times for the past year alone
-\end{compactitem}
+            November 2024-Present}}
+\begin{asparaitem}
+    \item Lead Gen-AI project utilizing Qualcomm in-house AI to generate test code, improving code coverage and validation efficiency.
+    % \item Lead development and optimization of CAD tools for front-end design, enhancing efficiency and scalability.
+    \item Collaborate with cross-functional teams to integrate automated design verification processes.
+\end{asparaitem}
+\subsection*{CAD Software Engineer{\normalfont, Qualcomm Technologies, Inc.,
+            \textit{CA} \hfill
+            July 2022-November 2024}}
+\begin{asparaitem}
+    % \item Migrated and re-engineered internal QA web tool from Perl backend to Python OOP that being used by 300+ active users and 250k+ usage count
+    % \item Administered the reengineering process with SDLC (Software Development Life Cycle) and standardized the contribution process for better collaboration
+    % \item Improved code efficiency by more than 50% and reduced the run time from 20+ hours to a few hours
+    % \item Implemented RTL level QA checks in Perl and Tcl/Tk that actively being used by 300+ chip designers
+    % \item Developing internal SystemVerilog generation tool that greatly improves the efficiency and code accuracy for SoC teams (actively being used by 30+ users)
+    % \item Maintaining quality code with quantity and contributed 2300+ times for the past year alone
+    \item Migrated and re-engineered an internal QA web tool from Perl to Python OOP, improving efficiency for 300+ active users.
+    \item Led reengineering following SDLC, standardizing contributions for better collaboration.
+    \item Optimized code efficiency by over 50\% and implemented RTL-level QA checks used by 300+ chip designers.
+    \item Developed an internal SystemVerilog generation tool, improving efficiency and accuracy for SoC teams.
+\end{asparaitem}
 
 \subsection*{Student Worker{\normalfont, USC Institute for Creative
             Technologies,
             \textit{CA} \hfill
             September 2021-April 2022}}
-\begin{compactitem}
-    \item Conducted data preprocessing, analysis, and visualizations on clinical psychology utterance data
-    \item Examined conversation segmentation and separations on 200+ GB of audio files using ELAN
-    \item Fine-tuned unsupervised Multinomial HMM models for predicting transcript codes with their confidence scores
-    \item Implemented supervised RNN and LSTM models for predicting utterance states
-    \item Generated LDA topic modeling models for exploring topics across states
-\end{compactitem}
-%\vspace{0.1in}
+\begin{asparaitem}
+%     \item Conducted data preprocessing, analysis, and visualizations on clinical psychology utterance data
+%     \item Examined conversation segmentation and separations on 200+ GB of audio files using ELAN
+%     \item Fine-tuned unsupervised Multinomial HMM models for predicting transcript codes with their confidence scores
+%     \item Implemented supervised RNN and LSTM models for predicting utterance states
+%     \item Generated LDA topic modeling models for exploring topics across states
+    \item Conducted data preprocessing, analysis, and visualizations on clinical psychology utterance data.
+    \item Analyzed 200+ GB of audio files for conversation segmentation using ELAN.
+    \item Fine-tuned unsupervised Multinomial HMM models to predict transcript codes with confidence scores.
+    \item Developed supervised RNN and LSTM models for utterance state prediction.
+    \item Built LDA topic models to explore key discussion topics across different states.
+\end{asparaitem}
+% %\vspace{0.1in}
 
-\subsection*{Course Producer{\normalfont, USC Viterbi School of Engineering,
-            \textit{CA} \hfill
-            August 2021-December 2021}}
-\begin{compactitem}
-    \item Actively assisted 90+ students in Foundations of Data Management
-    (DSCI 551)
-    \item Unit-tested students' homeworks using Python
-    \item Held office hours to help debug students' programming assignments
-    and to reinforce
-    course content
-    \item Helped the Professor in grading homeworks, labs, and proctoring exams, and
-    answering 180+ questions on Piazza
-\end{compactitem}
+% \subsection*{Course Producer{\normalfont, USC Viterbi School of Engineering,
+%             \textit{CA} \hfill
+%             August 2021-December 2021}}
+% \begin{asparaitem}
+%     \item Actively assisted 90+ students in Foundations of Data Management
+%     (DSCI 551)
+%     \item Unit-tested students' homeworks using Python
+%     \item Held office hours to help debug students' programming assignments
+%     and to reinforce
+%     course content
+%     \item Helped the Professor in grading homeworks, labs, and proctoring exams, and
+%     answering 180+ questions on Piazza
+% \end{asparaitem}
 %\vspace{0.1in}
 
 % \subsection*{Research Internship{\normalfont, CarmaCam, \textit{Remote} \hfill May 2021-August 2021}}
-% \begin{compactitem}
+% \begin{asparaitem}
 %     \item Upgraded the existing Machine Learning Scoring website with a new UI using Django and Celery
 %     % \item Re-designed the CarmaCam web app using Parallel Agile\textregistered\xspace CodeBot\textregistered
 % %    \item Aggregated API calls and integrated the website with Node.JS
 % 	\item Migrated the database of the ML scoring website from SQLite to MongoDB
 % 	\item Improved the database schema of CodeBot using EA Architect
-% \end{compactitem}
+% \end{asparaitem}
 %\vspace{0.1in}
 
 %\subsection*{Emergency Data Relief Internship (QA track){\normalfont, BroadStreet.io, \textit{Remote} \hfill September 2020-December 2020}}
-%\begin{compactitem}
+%\begin{asparaitem}
 %    \item Maintained quality assurance track for the daily number of COVID-19 cases
 %    \item Systematized \href{https://github.com/Anthonyive/broadstreet-qa-automation.git}{QA automation}
 %    process using Google Sheet API that cut the working time by more than
 %    50\%
 %    % \item Investigated trend breaks, diagnosed input errors, and communicated
 %    % with team members
-%\end{compactitem}
+%\end{asparaitem}
+
+\vspace{0.1in}
+
+%% EDUCATION %%
+\section*{\MakeUppercase{Education}}
+\hrule
+\medskip
+\subsection*{University of Southern California{\normalfont, \textit{Los Angeles, CA} \hfill May 2022}}
+% \noindent
+Master of Science, Applied Data Science
+% \hfill
+% CGPA\@ 3.78/4.0
+
+\subsection*{University of California, Los Angeles{\normalfont, \textit{Los Angeles, CA} \hfill August 2020}}
+% \noindent
+Bachelor of Science, Applied Mathematics with a minor in Statistics
+% \hfill
+% CGPA\@ 3.86/4.0
 
 \vspace{0.1in}
 
 %% ACADEMIC PROJECTS %%
-\myHeading{ACADEMIC PROJECTS}
+\section*{\MakeUppercase{Academic Projects}}
+\hrule
+\medskip
 \subsection*{Data Mining on the Yelp Dataset \hfill {\normalfont{January 2022-April 2022}}}
 \noindent
-Goal: To implement algorithms and build recommendation systems on a large dataset
-\begin{compactitem}
-	\item 200k+ reviews. Code containing 12 files totaling around 1800 LOC (lines of code) using PySpark and MapReduce
-	\item Implemented Locality Sensitive Hashing, and different types of collaborative-filtering recommendation systems: Item-based CF, Model-based CF, and Hybrid recommendation system. 
-    \item Fine-tuned Model-based CF with XGBoostRegressor
-	\item Community detection based on GraphFrames and based on Girvan-Newman Algorithm on an RDD level
-\end{compactitem}
+% Goal: To implement algorithms and build recommendation systems on a large dataset
+\begin{asparaitem}
+    \item Built recommendation systems using PySpark and MapReduce on 200k+ Yelp reviews.
+    \item Implemented collaborative filtering methods and fine-tuned models with XGBoostRegressor.
+	% \item 200k+ reviews. Code containing 12 files totaling around 1800 LOC (lines of code) using PySpark and MapReduce
+	% \item Implemented Locality Sensitive Hashing, and different types of collaborative-filtering recommendation systems: Item-based CF, Model-based CF, and Hybrid recommendation system. 
+    % \item Fine-tuned Model-based CF with XGBoostRegressor
+	% \item Community detection based on GraphFrames and based on Girvan-Newman Algorithm on an RDD level
+\end{asparaitem}
 
-\subsection*{The Influence of Pre- \& Post-processing on Document Summarization \hfill {\normalfont{August
+\subsection*{The Influence of Pre- \& Post-processing on Doc. Summarization \hfill {\normalfont{August
         2021-December 2021}}}
 \noindent
 % \href{https://github.com/Anthonyive/csci-544-project.git}{\faIcon{github}}  \href{https://www.youtube.com/watch?v=oVIVtOPeWEs}{\faIcon{youtube}} \href{https://arxiv.org/abs/2112.01660}{\textbf{arXiv}} 
-Goal: To improve existing long document summarization models' performance\hfill\textit{arXiv}: \href{https://arxiv.org/abs/2112.01660}{https://arxiv.org/abs/2112.01660}
-\begin{compactitem}
-    \item Implemented extractive-based baseline (e.g. TextRank) and Google's T5 text-to-text transformer model
+% Goal: To improve existing long document summarization models' performance\hfill\textit{arXiv}: \href{https://arxiv.org/abs/2112.01660}{https://arxiv.org/abs/2112.01660}
+\textit{arXiv}: \href{https://arxiv.org/abs/2112.01660}{https://arxiv.org/abs/2112.01660}
+\begin{asparaitem}
+    \item Improved document summarization models using extractive-based baselines and Google's T5 transformer model.
+    % \item Implemented extractive-based baseline (e.g. TextRank) and Google's T5 text-to-text transformer model
 %    \item Inspired team members to implement GPT-3 and XLNet models
-    \item Slight improvement in Rouge-1 score (15\%) and substantially improved Rouge-2 scores (53\%) for certain datasets
+    % \item Slight improvement in Rouge-1 score (15\%) and substantially improved Rouge-2 scores (53\%) for certain datasets
 %    \item Formulated team's workflow by using GitHub actions and branching
-\end{compactitem}
+\end{asparaitem}
 %\vspace{0.1in}
 
 \subsection*{Mapping Uncanny Valley \hfill {\normalfont{September
         2020-September 2022}}}
 \noindent
 % \href{https://github.com/Anthonyive/Research-Mapping-Uncanny-Valley.git}{\faIcon{github}} 
-Goal: To help answer what makes text creepy\hfill \textit{arXiv}: \href{https://arxiv.org/abs/2211.05369}{https://arxiv.org/abs/2211.05369}
-\begin{compactitem}
+% Goal: To help answer what makes text creepy\hfill \textit{arXiv}: \href{https://arxiv.org/abs/2211.05369}{https://arxiv.org/abs/2211.05369}
+\textit{arXiv}: \href{https://arxiv.org/abs/2211.05369}{https://arxiv.org/abs/2211.05369}
+\begin{asparaitem}
     \item Received Best Project Achievement Award and Best Data Science Open and
     Sharing Practices Award
     \item Received Best Cyberphysical Data Science Team Award for a team of six people
     in DataFest Fall 2020
-    \item Conducted DNN/RNN model with accuracy up to 96\% and implemented
-    multiple NLP techniques
+    % \item Conducted DNN/RNN model with accuracy up to 96\% and implemented
+    % multiple NLP techniques
 %    \item Studied 20+ papers and ideas, and collaborated with team weekly
-    \item Co-authored ``Mapping the Uncanny Valley in Text'' submission in
-    ICWSM '22
-\end{compactitem}
+    % \item Co-authored ``Mapping the Uncanny Valley in Text'' submission in
+    % ICWSM '22
+    \item Conducted NLP research analyzing what makes text “creepy.”
+    \item Developed deep learning models (DNN/RNN) achieving up to 96\% accuracy.
+
+\end{asparaitem}
 %\vspace{0.1in}
 
 % \subsection*{Walmart Product Search \hfill {\normalfont{January 2021-May 2021}}}
 % \noindent
 % % \href{https://github.com/Anthonyive/DSCI-551-Project.git}{\faIcon{github}} 
 % Goal: To build a full-stack Walmart product search UI
-% \begin{compactitem}
+% \begin{asparaitem}
 %     \item Leveraged MongoDB as a backend to store 6000 paginated pages from Walmart
 %     Affiliate API
 %     \item Built a Flask app for searching and filtering from over 300,000
 %     product items with over 30 fields each
 % %    \item Hosted the UI website on AWS EC2 and Route53 using Nginx with SSL
 % %    certificate
-% \end{compactitem}
+% \end{asparaitem}
 % %\vspace{0.1in}
 
 %\subsection*{Title: Analysis of Cyber Phishing Emails \hfill 
@@ -176,49 +258,25 @@ Goal: To help answer what makes text creepy\hfill \textit{arXiv}: \href{https://
 %\noindent
 %\href{https://github.com/Anthonyive/DSCI-550-Assignments.git}{\faIcon{github}} 
 %Goal: To analyze fraudulent email dataset on Kaggle.
-%\begin{compactitem}
+%\begin{asparaitem}
 % \item Analyzed social engineering attack techniques using NLP (spaCy, 
 %     nltk, pre-trained neural nets, etc)
 % \item Implemented GPT-2 and DCGAN frameworks to generate attacker 
 %     face images and emails
-%\end{compactitem}
+%\end{asparaitem}
 %\vspace{0.1in}
 
 %\myHeading{LEADERSHIP \& INVOLVEMENT}
 %\subsection*{Publicity Director{\normalfont, International Student Advancement 
 %Program, East Los Angeles College \hfill	2016-2017}}
-%\begin{compactitem}
+%\begin{asparaitem}
 %    \item Designed fliers and banners for Food Sales, Lunar Festivals, 
 %        New Year Fairs, and other activities
 %    \item Arranged and presented with club members to help and decorate 
 %        club activities
-%\end{compactitem}
+%\end{asparaitem}
 
-\vspace{0.1in}
 
-%% EDUCATION %%
-\myHeading{EDUCATION}
-\subsection*{University of Southern California{\normalfont, \textit{Los Angeles, CA} \hfill May 2022}}
-\noindent
-Master of Science, Applied Data Science
-% \hfill
-% CGPA\@ 3.78/4.0
 
-\subsection*{University of California, Los Angeles{\normalfont, \textit{Los Angeles, CA} \hfill August 2020}}
-\noindent
-Bachelor of Science, Applied Mathematics with a minor in Statistics
-% \hfill
-% CGPA\@ 3.86/4.0
 
-\vspace{0.1in}
-
-%% SKILLS %%
-\myHeading{SKILLS}
-\vspace{0.05in}
-\begin{compactdesc}
-	\item[Topics] Software Development, Natural Language Processing (NLP), Machine Learning, Data Science, Statistics
-    \item[Programming Languages] Strong knowledge: Python | Basic knowledge: Perl, Java, R, C\texttt{++}, Bash, etc.
-    \item[Database Management] SQLite, MySQL, MongoDB, Amazon DynamoDB, Firebase, Hadoop HDFS
-    \item[Tools] PyTorch, TensorFlow, scikit-learn, GitHub, Pandas, PySpark, Distributed Systems, MapReduce, Algorithms, etc.
-\end{compactdesc}
 \end{document}
