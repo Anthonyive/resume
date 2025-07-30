@@ -24,37 +24,45 @@
 %     "latex-workshop.linting.chktex.enabled": true
 % }
 
-\documentclass[11pt]{article}
+\documentclass[10pt]{article}
 
 \usepackage{preamble}
 
 % Title and contacts
 % \newcommand\HUGE{\fontsize{26}{32}\selectfont}
-\fancyhead{}
-\fancyhead[L]{
-	% name
-	\Huge \textbf{Yuchen Zhang}
-}
-\fancyhead[R]{
-    \begin{tabular}{r}
-        % Phone
-        \href{tel:13238688380}{+1 (323) 868-8380}\\
-        % % Email
-        \href{mailto:anthony.yuchen@gmail.com}{anthony.yuchen@gmail.com}\\ 
-        % Personal website (disabled for now)
-        % \href{https://anthonyive.github.io/}{anthonyive.github.io}  | 
-        % GitHub profile
-        % \href{https://www.github.com/anthonyive}{github.com/anthonyive}  \\
-        % LinkedIn profile
-        \href{https://www.linkedin.com/in/anthonyive}{linkedin.com/in/anthonyive}
-    \end{tabular}
-}
+% \fancyhead{}
+% \fancyhead[L]{
+% 	% name
+% 	\Huge \textbf{Yuchen Zhang}
+% }
+% \fancyhead[R]{
+%     \begin{tabular}{r}
+%         % Phone
+%         \href{tel:13238688380}{+1 (323) 868-8380}\\
+%         % % Email
+%         \href{mailto:anthony.yuchen@gmail.com}{anthony.yuchen@gmail.com}\\ 
+%         % Personal website (disabled for now)
+%         % \href{https://anthonyive.github.io/}{anthonyive.github.io}  | 
+%         % GitHub profile
+%         % \href{https://www.github.com/anthonyive}{github.com/anthonyive}  \\
+%         % LinkedIn profile
+%         \href{https://www.linkedin.com/in/anthonyive}{linkedin.com/in/anthonyive}
+%     \end{tabular}
+% }
 % % Decorative horizontal line
 % \renewcommand{\headrulewidth}{2pt} % Adjust thickness
 % \renewcommand{\headrule}{\hbox to\headwidth{\leaders\hbox{---}\hfill}} % Dashed line
 
 
 \begin{document}
+
+\begin{center}
+  {\LARGE \textbf{Yuchen Zhang} -- Senior CAD Engineer} \\
+  San Diego, CA \quad\textbar\quad \href{tel:13238688380}{+1 (323) 868-8380} \quad\textbar\quad \href{mailto:anthony.yuchen@gmail.com}{anthony.yuchen@gmail.com} \quad\textbar\quad \href{https://linkedin.com/in/anthonyive}{linkedin.com/in/anthonyive}
+\end{center}
+
+% \vspace{0.2in}
+
 
 \vspace*{0.01in}
 
@@ -69,13 +77,20 @@
     % \item[Programming Languages] Strong knowledge: Python | Basic knowledge: Perl, Java, R, C\texttt{++}, Bash, etc.
     % \item[Database Management] SQLite, MySQL, MongoDB, Amazon DynamoDB, Firebase, Hadoop HDFS
     % \item[Tools] PyTorch, TensorFlow, scikit-learn, GitHub, Pandas, PySpark, Distributed Systems, MapReduce, Algorithms, etc.
-    \item[Software Development] Python, Perl, Java, R, C++, Bash, SystemVerilog
-    \item[Version Control \& CI/CD] Git, ClearCase, Continuous Integration/Continuous Delivery (CI/CD)
-    \item[Data Science \& Machine Learning] NLP, TensorFlow, PyTorch, scikit-learn, Pandas, PySpark
-    \item[EDA \& VLSI] Electronic Design Automation (EDA), Very-Large-Scale Integration (VLSI), Tcl-Tk
-    \item[Databases] SQLite, MySQL, MongoDB, Amazon DynamoDB, Firebase, Hadoop HDFS
-    \item[Tools \& Systems] GNU Make, Linux, GitHub, Distributed Systems, MapReduce, Algorithms
-    \item[Soft Skills] Presentation Skills, Technical Communication
+    % \item[Software Development] Python, Perl, Java, R, C++, Bash, SystemVerilog
+    % \item[Version Control \& CI/CD] Git, ClearCase, Continuous Integration/Continuous Delivery (CI/CD)
+    % \item[Data Science \& Machine Learning] NLP, TensorFlow, PyTorch, scikit-learn, Pandas, PySpark
+    % \item[EDA \& VLSI] Electronic Design Automation (EDA), Very-Large-Scale Integration (VLSI), Tcl-Tk
+    % \item[Databases] SQLite, MySQL, MongoDB, Amazon DynamoDB, Firebase, Hadoop HDFS
+    % \item[Tools \& Systems] GNU Make, Linux, GitHub, Distributed Systems, MapReduce, Algorithms
+    % \item[Soft Skills] Presentation Skills, Technical Communication
+
+    \item[Languages \& Tools] Python (advanced), C++, Perl, Bash, SystemVerilog  
+    \item[Dev \& Infra] Git, CI/CD, GNUMake, Linux, Jenkins, ClearCase  
+    \item[EDA \& Systems] Front-End CAD, RTL QA, EDA Tool Development  
+    \item[Data \& ML (academic)] TensorFlow, PyTorch, Pandas, scikit-learn, NLP  
+    \item[Soft Skills] Cross-functional Collaboration, Technical Communication
+
 
     % \item[Software Development] Python, Perl, Java, R, C++, Bash
     % \item[Data Science \& Machine Learning] NLP, TensorFlow, PyTorch, scikit-learn, Pandas, PySpark
@@ -89,13 +104,22 @@
 \section*{\MakeUppercase{Work Experience}}
 \hrule
 \medskip
-\subsection*{Senior Font-End CAD Engineer{\normalfont, Qualcomm Technologies, Inc.,
+\subsection*{Senior Front-End CAD Engineer{\normalfont, Qualcomm Technologies, Inc.,
             \textit{CA} \hfill
             November 2024-Present}}
 \begin{asparaitem}
-    \item Lead Gen-AI project utilizing Qualcomm in-house AI to generate test code, improving code coverage and validation efficiency.
+    \item Led development of an AI-powered documentation assistant chatbot using Qualcomm's in-house language model, enabling engineers to search design specs more efficiently.
+
+    % \item Lead Gen-AI project utilizing Qualcomm in-house AI to generate unit test code and documentation chatbot.
+    % \item Maintained and continuously improved a company-wide QA web application (originally re-architected in Python); actively used by 100+ engineers with over 10,000 clicks in 5 months.
+
+    % \item Maintained and enhanced a widely used internal QA tool (10K+ user interactions over 5 months), enabling 100+ engineers to perform RTL verification tasks efficiently.
+    \item Owned and scaled a widely used QA tool (10K+ clicks over 5 months, 100+ engineers) for SoC Impl and HM Core teams, streamlining RTL verification workflows and reducing manual effort.
+    \item Acted as primary owner of feature updates, bug resolution, and cross-team support.
+    
     % \item Lead development and optimization of CAD tools for front-end design, enhancing efficiency and scalability.
-    \item Collaborate with cross-functional teams to integrate automated design verification processes.
+    % \item Collaborate with cross-functional teams to integrate automated design verification processes.
+    \item Drove cross-functional integration of automated front-end verification workflows, improving team-wide design turnaround time.
 \end{asparaitem}
 \subsection*{CAD Software Engineer{\normalfont, Qualcomm Technologies, Inc.,
             \textit{CA} \hfill
@@ -107,10 +131,13 @@
     % \item Implemented RTL level QA checks in Perl and Tcl/Tk that actively being used by 300+ chip designers
     % \item Developing internal SystemVerilog generation tool that greatly improves the efficiency and code accuracy for SoC teams (actively being used by 30+ users)
     % \item Maintaining quality code with quantity and contributed 2300+ times for the past year alone
-    \item Migrated and re-engineered an internal QA web tool from Perl to Python OOP, improving efficiency for 300+ active users.
-    \item Led reengineering following SDLC, standardizing contributions for better collaboration.
-    \item Optimized code efficiency by over 50\% and implemented RTL-level QA checks used by 300+ chip designers.
-    \item Developed an internal SystemVerilog generation tool, improving efficiency and accuracy for SoC teams.
+    % \item Migrated and re-engineered an internal QA web tool from Perl to Python OOP, improving efficiency for 300+ active users.
+    \item Re-architected legacy Perl QA tool into modular Python OOP framework; reduced load time by 50\% and supported 300+ RTL designers daily.
+    \item Developed internal SystemVerilog auto-generation tool, reducing manual effort and improving accuracy across SoC teams
+    \item Standardized team-wide SDLC contribution workflow, improving code maintainability and onboarding speed
+    % \item Led reengineering following SDLC, standardizing contributions for better collaboration.
+    % \item Optimized code efficiency by over 50\% and implemented RTL-level QA checks used by 300+ chip designers.
+    % \item Developed an internal SystemVerilog generation tool, improving efficiency and accuracy for SoC teams.
 \end{asparaitem}
 
 \subsection*{Student Worker{\normalfont, USC Institute for Creative
@@ -190,26 +217,28 @@ Bachelor of Science, Applied Mathematics with a minor in Statistics
 \section*{\MakeUppercase{Academic Projects}}
 \hrule
 \medskip
-\subsection*{Data Mining on the Yelp Dataset \hfill {\normalfont{January 2022-April 2022}}}
-\noindent
-% Goal: To implement algorithms and build recommendation systems on a large dataset
-\begin{asparaitem}
-    \item Built recommendation systems using PySpark and MapReduce on 200k+ Yelp reviews.
-    \item Implemented collaborative filtering methods and fine-tuned models with XGBoostRegressor.
-	% \item 200k+ reviews. Code containing 12 files totaling around 1800 LOC (lines of code) using PySpark and MapReduce
-	% \item Implemented Locality Sensitive Hashing, and different types of collaborative-filtering recommendation systems: Item-based CF, Model-based CF, and Hybrid recommendation system. 
-    % \item Fine-tuned Model-based CF with XGBoostRegressor
-	% \item Community detection based on GraphFrames and based on Girvan-Newman Algorithm on an RDD level
-\end{asparaitem}
+% \subsection*{Data Mining on the Yelp Dataset \hfill {\normalfont{January 2022-April 2022}}}
+% \noindent
+% % Goal: To implement algorithms and build recommendation systems on a large dataset
+% \begin{asparaitem}
+%     \item Built recommendation systems using PySpark and MapReduce on 200k+ Yelp reviews.
+%     \item Implemented collaborative filtering methods and fine-tuned models with XGBoostRegressor.
+% 	% \item 200k+ reviews. Code containing 12 files totaling around 1800 LOC (lines of code) using PySpark and MapReduce
+% 	% \item Implemented Locality Sensitive Hashing, and different types of collaborative-filtering recommendation systems: Item-based CF, Model-based CF, and Hybrid recommendation system. 
+%     % \item Fine-tuned Model-based CF with XGBoostRegressor
+% 	% \item Community detection based on GraphFrames and based on Girvan-Newman Algorithm on an RDD level
+% \end{asparaitem}
 
 \subsection*{The Influence of Pre- \& Post-processing on Doc. Summarization \hfill {\normalfont{August
         2021-December 2021}}}
 \noindent
 % \href{https://github.com/Anthonyive/csci-544-project.git}{\faIcon{github}}  \href{https://www.youtube.com/watch?v=oVIVtOPeWEs}{\faIcon{youtube}} \href{https://arxiv.org/abs/2112.01660}{\textbf{arXiv}} 
 % Goal: To improve existing long document summarization models' performance\hfill\textit{arXiv}: \href{https://arxiv.org/abs/2112.01660}{https://arxiv.org/abs/2112.01660}
-\textit{arXiv}: \href{https://arxiv.org/abs/2112.01660}{https://arxiv.org/abs/2112.01660}
+% \textit{arXiv}: \href{https://arxiv.org/abs/2112.01660}{https://arxiv.org/abs/2112.01660}
 \begin{asparaitem}
-    \item Improved document summarization models using extractive-based baselines and Google's T5 transformer model.
+    % \item Improved document summarization models using extractive-based baselines and Google's T5 transformer model.
+    \item Co-authored research on neural text generation (arXiv:2112.01660), explored effects of pre/post-processing on summarization accuracy.
+
     % \item Implemented extractive-based baseline (e.g. TextRank) and Google's T5 text-to-text transformer model
 %    \item Inspired team members to implement GPT-3 and XLNet models
     % \item Slight improvement in Rouge-1 score (15\%) and substantially improved Rouge-2 scores (53\%) for certain datasets
@@ -222,19 +251,21 @@ Bachelor of Science, Applied Mathematics with a minor in Statistics
 \noindent
 % \href{https://github.com/Anthonyive/Research-Mapping-Uncanny-Valley.git}{\faIcon{github}} 
 % Goal: To help answer what makes text creepy\hfill \textit{arXiv}: \href{https://arxiv.org/abs/2211.05369}{https://arxiv.org/abs/2211.05369}
-\textit{arXiv}: \href{https://arxiv.org/abs/2211.05369}{https://arxiv.org/abs/2211.05369}
+% \textit{arXiv}: \href{https://arxiv.org/abs/2211.05369}{https://arxiv.org/abs/2211.05369}
 \begin{asparaitem}
     \item Received Best Project Achievement Award and Best Data Science Open and
     Sharing Practices Award
     \item Received Best Cyberphysical Data Science Team Award for a team of six people
     in DataFest Fall 2020
-    % \item Conducted DNN/RNN model with accuracy up to 96\% and implemented
-    % multiple NLP techniques
-%    \item Studied 20+ papers and ideas, and collaborated with team weekly
-    % \item Co-authored ``Mapping the Uncanny Valley in Text'' submission in
-    % ICWSM '22
-    \item Conducted NLP research analyzing what makes text “creepy.”
-    \item Developed deep learning models (DNN/RNN) achieving up to 96\% accuracy.
+%     % \item Conducted DNN/RNN model with accuracy up to 96\% and implemented
+%     % multiple NLP techniques
+% %    \item Studied 20+ papers and ideas, and collaborated with team weekly
+%     % \item Co-authored ``Mapping the Uncanny Valley in Text'' submission in
+%     % ICWSM '22
+%     \item Conducted NLP research analyzing what makes text “creepy.”
+%     \item Developed deep learning models (DNN/RNN) achieving up to 96\% accuracy.
+    \item Published research on linguistic cues of “creepiness” (arXiv:2211.05369); developed deep learning models achieving up to 96% accuracy.  
+    % \item Received Best Project and Data Science Sharing awards in DataFest Fall 2020.
 
 \end{asparaitem}
 %\vspace{0.1in}

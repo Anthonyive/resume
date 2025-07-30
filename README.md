@@ -10,7 +10,39 @@ The résumé will be published in a form of GitHub releases.
 - To view PDF in Google Docs: [Click Here](https://docs.google.com/viewer?url=https://github.com/Anthonyive/resume/releases/latest/download/resume.pdf)
 - To download PDF: [Click Here](https://github.com/Anthonyive/resume/releases/latest/download/resume.pdf)
 -->
+
 - To go to the latest release page: [Click Here](https://github.com/Anthonyive/resume/releases/latest)
+
+## Build Locally
+
+I'm using VS code with LaTeX Workshop extention. Please build with lualatex.
+VS Code -> LaTeX Workshop extension settings:
+
+```json
+{
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "lualatex",
+      "tools": ["lualatex"]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "lualatex",
+      "command": "lualatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-output-directory=%OUTDIR%",
+        "%DOC%"
+      ],
+      "env": {}
+    }
+  ],
+  "latex-workshop.linting.chktex.enabled": true
+}
+```
 
 ## GitHub Actions CI/CD
 
